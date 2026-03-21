@@ -1,8 +1,5 @@
 .DS_Store
-**/.DS_Store
+**/.DS_Sto
 
-# 超过 GitHub 单文件 100MB 限制，不纳入版本库（可本地保留或用 Git LFS）
-CSCD03/info-pre/P2d-Screen Use and Sleep.mp4
-CSCD03/info-pre/P2d-Screen Use and Sleep.pptx
-EESA06&11/06/week1/file.pdf
-CSCC10/P4.shuangtender.mp4
+# Exceeds GitHub 100MB file limit — keep locally only
+EESA06&11/06/week1/file.pdf.zip
