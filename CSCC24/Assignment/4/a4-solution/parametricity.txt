@@ -1,0 +1,37 @@
+e :: forall a. (Integer -> a) -> [a]
+
+After fully expanding the parametricity theorem:
+
+for all types AL, AR, for all relation (~) between AL and AR:
+  let <a> = (~) in
+  for all fL :: Integer -> AL, fR :: Integer -> AR:
+    if (for all xl, xr :: Integer: if xl=xr then fL xl <a> fR xr)
+    then e fL <[a]> e fR
+(2 marks)
+
+Choose
+AL = Integer
+fL = id
+(~) be the function fR
+(1.5 marks)
+
+Then:
+
+for all types AR:
+  for all fR :: Integer -> AR:
+    if (for all xl, xr :: Integer: if xl=xr then fR (fL xl) = fR xr)
+    then map fR (e id) = e fR
+(0.5 marks)
+
+The assumption holds because if xl=xr, then
+
+    fR (fL xl)
+  = fR (id xr)
+  = fR xr
+(1 mark)
+
+Therefore:
+
+for all types AR:
+  for all fR :: Integer -> AR:
+    map fR (e id) = e fR

@@ -1,0 +1,48 @@
+(a). [3 marks] for all finite list xs: map g (map f xs) = map (g . f) xs
+IH: For all finite lists `xs` : `map g (map f xs ) = map (g.f) xs`
+
+Base case: xs = []
+map g (map f []) = map g [] = []
+map (g.f) [] = []
+Thus, map g (map f []) = map (g.f) []   => holds
+
+Inductive Step: Assume the statement holds for a finite list xs such as: map g (map f xs) = map (g.f) xs
+WTP: map g (map f (x:xs)) = map (g.f) (x:xs)
+
+By definition of `map`: 
+map f (x:xs) = f x : map f xs
+map g (f x : map f xs) = g (f x) : map g (map f xs)
+
+By I.H, map g (map f xs)=map (g.f) xs
+Thus, g (f x) : map g (map f xs) = g (f x) : map (g.f) xs
+map (g.f) (x : xs) = (g.f) x : map (g.f) xs = g (f x) : map (g.f) xs
+
+=> map g (map f (x:xs)) = map (g.f) (x:xs) => holds
+
+Q.E.D
+
+
+(b). [7 marks] for all finite list xs: for all integer a: map (t a) (inits xs) = s a xs
+Base Case: xs = []
+inits [] = [[]]
+map (t a) [[]] = [t a []]=[a]
+s a [] = a : [] = [a]
+Thus, map (t a) (inits []) = s a []  => holds
+
+Inductive Step: Assume the statement hold for a finit set `xs` such as map (t a) (inits xs) = s a xs
+WTP: map (t a) (inits (x:xs)) = s a (x:xs)
+
+map (t a) (inits (x : xs)) = map (t a) ([] : map (\ys -> x : ys) (inits xs))
+                           = (t a) [] : map (t a) (map (\ys -> x : ys) (inits xs))
+                           = a : map (t a) (map (\ys -> x : ys) (inits xs))
+When we apply (a), we get:
+map (t a) (map (\ys -> x : ys) (inits xs)) = map ((t a) . (\ys -> x : ys)) (inits xs)
+                                           = map (\ys -> (t a)(x : ys))(inits xs)
+                                           = map (\ys -> t (a + x) ys) (inits xs)
+                                           = map (t (a + x)) (inits xs)
+By the I.H, we get :
+map (t (a + x)) (inits xs) = s (a + x) xs
+
+=> map (t a) (inits (x : xs)) = a : s (a + x) xs = s a (x : xs) by definition of s
+
+Therefore hold, Q.E.D

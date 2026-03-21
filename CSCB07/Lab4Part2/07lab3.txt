@@ -1,0 +1,22 @@
+1. 
+“public static SpecialNumber computeAverage(List<SpecialNumber> z) throws Lab3Exception{}"
+Violate the rule of <Naming Conventions>, the name of List<SpecialNumber>, z, is somehow meatless, which can be change to "listOfSN"
+
+2.
+"public static SpecialNumber computeAverage(List<SpecialNumber> z) throws Lab3Exception{}"
+Violate the rule of <Line Length>, the length of the statement is 92. It can be changed as:
+"public static SpecialNumber computeAverage(List<SpecialNumber> z)
+ throws Lab3Exception{}"
+
+3.
+"if(obj == null) return false;"
+Violate the rule of <if, if-else, if else-if else Statements>
+It should be changed as "if(obj == null) {return false;}"
+
+4.
+“if(z == null || z.size() == 0) {throw new Lab3Exception("List cannot be empty");}"
+Violate the rule of <Miscellaneous Practices of Parentheses>
+It should be changed as "if((z == null) || (z.size() == 0)){...}"
+
+5.
+ 

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/CSCC09" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hw1-MegumiKat" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hw2-MegumiKat" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hw3-MegumiKat" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/lab2-MegumiKat" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/lab3-MegumiKat" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/lab4-MegumiKat" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/lab5-MegumiKat" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/lab6-MegumiKat" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/lab7-MegumiKat" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/lab8-MegumiKat" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/project-stockform" vcs="Git" />
+  </component>
+</project>

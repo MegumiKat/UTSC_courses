@@ -1,0 +1,17 @@
+infer {} (\f -> f True)
+  create new unknown uf for f
+  T := infer {f::uf} (f True)
+    Tf := infer {f::uf} f
+      return uf
+    Tf = uf
+    Te := infer {f::uf} True
+      return Bool
+    Te = Bool
+    create unknown u
+    unify Tf (Te -> u)
+      unify-intern uf (Bool -> u)
+                                               Updated table:
+                                               uf := Bool -> u
+    return (apply-subst u) = u
+  T = u
+  return (apply-subst (uf -> T)) = (Bool -> u) -> u

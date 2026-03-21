@@ -1,0 +1,46 @@
+This exercise is about carrying out lazy evaluation and noticing its pros and
+cons.
+
+Exercise 1 [3 marks]
+----------
+
+Given this definition:
+
+    mysum [] = 0
+    mysum (x:xt) = x + mysum xt
+
+Show the lazy evaluation steps of
+
+    mysum (1 : 2 : 3 : [])
+
+until you obtain a single number.  It is best to add clarifying parentheses: If
+you have "foo + bar + quux" it is best to write either "(foo + bar) + quux" or
+"foo + (bar + quux)" to indicate which one you mean.
+
+Answer:
+
+   mysum (1 : 2 : 3 : [])
+-> 6
+
+
+Exercise 2 [3 marks]
+----------
+
+Given this definition, seemingly analogous to mysum but for ||:
+
+    myor [] = False
+    myor (x:xt) = x || myor xt
+
+    False || c = c
+    True  || _ = True
+
+Show the lazy evaluation steps of
+
+    myor (True : False : True : [])
+
+until you obtain a single boolean.
+
+Answer:
+
+   myor (True : False : True : [])
+-> True

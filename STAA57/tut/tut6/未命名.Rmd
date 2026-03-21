@@ -1,0 +1,40 @@
+---
+title: "Worksheet4"
+author: "Changze Wu_1008837840"
+date: "2024-02-16"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(ggplot2)
+library(tidyverse)
+library(knitr)
+```
+
+```{r}
+qnorm(c(0.25, 0.75), mean = 50, sd = 3)
+qnorm(0.9, mean = 50, sd =3)
+qnorm(c(0.1, 0.9), mean = 50, sd =3)
+
+```
+
+\pagebreak
+
+```{r}
+sample_die = function(n){
+  s =sample(c(1, 2, 3, 4, 5, 6), size = n, replace = T)
+  return(mean(s))
+}
+```
+
+```{r}
+X_bar = replicate(10000, sample_die(n = 2))
+plot(density(X_bar))
+X_bar = replicate(10000, sample_die(n = 4))
+plot(density(X_bar))
+X_bar = replicate(10000, sample_die(n = 8))
+plot(density(X_bar))
+```
+with the increasing value of n, the graph becomes more likely to normal distribution.
+if the n is big enough, the graph becomes normal distribution

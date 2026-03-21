@@ -1,0 +1,826 @@
+_id,ReportedYear,Category,Subtype,AssaultSubtype,Sex,AgeGroup,AgeCohort,Count_
+1,2014,Crimes Against the Person,Assault,Aggravated Peace Officer,M,Adult,'25-34',2
+2,2014,Crimes Against the Person,Assault,Aggravated Peace Officer,M,Adult,'55-64',1
+3,2014,Crimes Against the Person,Assault,Assault Peace Officer,F,Adult,'18-24',1
+4,2014,Crimes Against the Person,Assault,Assault Peace Officer,F,Adult,'25-34',5
+5,2014,Crimes Against the Person,Assault,Assault Peace Officer,F,Adult,'35-44',3
+6,2014,Crimes Against the Person,Assault,Assault Peace Officer,F,Adult,'45-54',1
+7,2014,Crimes Against the Person,Assault,Assault Peace Officer,F,Adult,'55-64',1
+9,2014,Crimes Against the Person,Assault,Assault Peace Officer,M,Adult,'18-24',2
+10,2014,Crimes Against the Person,Assault,Assault Peace Officer,M,Adult,'25-34',21
+11,2014,Crimes Against the Person,Assault,Assault Peace Officer,M,Adult,'35-44',19
+12,2014,Crimes Against the Person,Assault,Assault Peace Officer,M,Adult,'45-54',14
+13,2014,Crimes Against the Person,Assault,Assault Peace Officer,M,Adult,'55-64',1
+15,2014,Crimes Against the Person,Assault,Assault Peace Officer Weapon/Bodily Harm,F,Adult,'25-34',1
+16,2014,Crimes Against the Person,Assault,Assault Peace Officer Weapon/Bodily Harm,F,Adult,'35-44',1
+18,2014,Crimes Against the Person,Assault,Assault Peace Officer Weapon/Bodily Harm,M,Adult,'25-34',4
+19,2014,Crimes Against the Person,Assault,Assault Peace Officer Weapon/Bodily Harm,M,Adult,'35-44',2
+20,2014,Crimes Against the Person,Assault,Assault Peace Officer Weapon/Bodily Harm,M,Adult,'45-54',1
+22,2014,Crimes Against the Person,Assault,Assault Resist Arrest,F,Adult,'18-24',1
+23,2014,Crimes Against the Person,Assault,Assault Resist Arrest,F,Adult,'25-34',22
+24,2014,Crimes Against the Person,Assault,Assault Resist Arrest,F,Adult,'35-44',4
+25,2014,Crimes Against the Person,Assault,Assault Resist Arrest,F,Adult,'45-54',1
+27,2014,Crimes Against the Person,Assault,Assault Resist Arrest,M,Adult,'18-24',33
+28,2014,Crimes Against the Person,Assault,Assault Resist Arrest,M,Adult,'25-34',84
+29,2014,Crimes Against the Person,Assault,Assault Resist Arrest,M,Adult,'35-44',35
+30,2014,Crimes Against the Person,Assault,Assault Resist Arrest,M,Adult,'45-54',14
+31,2014,Crimes Against the Person,Assault,Assault Resist Arrest,M,Adult,'55-64',5
+32,2014,Crimes Against the Person,Assault,Assault Resist Arrest,M,Adult,'65+',1
+34,2014,Crimes Against the Person,Assault,Other,F,Adult,'18-24',1460
+35,2014,Crimes Against the Person,Assault,Other,F,Adult,'25-34',1904
+36,2014,Crimes Against the Person,Assault,Other,F,Adult,'35-44',1276
+37,2014,Crimes Against the Person,Assault,Other,F,Adult,'45-54',919
+38,2014,Crimes Against the Person,Assault,Other,F,Adult,'55-64',388
+39,2014,Crimes Against the Person,Assault,Other,F,Adult,'65+',287
+40,2014,Crimes Against the Person,Assault,Other,F,Child,'<12',325
+42,2014,Crimes Against the Person,Assault,Other,F,Youth,'12-17',525
+43,2014,Crimes Against the Person,Assault,Other,M,Adult,'18-24',1056
+44,2014,Crimes Against the Person,Assault,Other,M,Adult,'25-34',1667
+45,2014,Crimes Against the Person,Assault,Other,M,Adult,'35-44',1141
+46,2014,Crimes Against the Person,Assault,Other,M,Adult,'45-54',1183
+47,2014,Crimes Against the Person,Assault,Other,M,Adult,'55-64',611
+48,2014,Crimes Against the Person,Assault,Other,M,Adult,'65+',285
+49,2014,Crimes Against the Person,Assault,Other,M,Child,'<12',506
+51,2016,Crimes Against the Person,Other,,U,Adult,'18-24',1
+52,2016,Crimes Against the Person,Other,,U,Adult,'25-34',1
+53,2016,Crimes Against the Person,Other,,U,Adult,'35-44',2
+54,2016,Crimes Against the Person,Other,,U,Adult,'45-54',1
+56,2016,Crimes Against the Person,Robbery,,F,Adult,'18-24',191
+57,2016,Crimes Against the Person,Robbery,,F,Adult,'25-34',185
+58,2016,Crimes Against the Person,Robbery,,F,Adult,'35-44',114
+59,2016,Crimes Against the Person,Robbery,,F,Adult,'45-54',122
+60,2016,Crimes Against the Person,Robbery,,F,Adult,'55-64',97
+61,2016,Crimes Against the Person,Robbery,,F,Adult,'65+',41
+62,2016,Crimes Against the Person,Robbery,,F,Child,'<12',6
+64,2016,Crimes Against the Person,Robbery,,F,Youth,'12-17',77
+65,2016,Crimes Against the Person,Robbery,,M,Adult,'18-24',703
+66,2016,Crimes Against the Person,Robbery,,M,Adult,'25-34',434
+67,2016,Crimes Against the Person,Robbery,,M,Adult,'35-44',222
+68,2016,Crimes Against the Person,Robbery,,M,Adult,'45-54',258
+69,2016,Crimes Against the Person,Robbery,,M,Adult,'55-64',162
+70,2016,Crimes Against the Person,Robbery,,M,Adult,'65+',63
+71,2016,Crimes Against the Person,Robbery,,M,Child,'<12',17
+73,2016,Crimes Against the Person,Robbery,,M,Youth,'12-17',699
+74,2016,Crimes Against the Person,Robbery,,U,Adult,'18-24',1
+75,2016,Crimes Against the Person,Robbery,,U,Adult,'35-44',1
+76,2016,Crimes Against the Person,Robbery,,U,Youth,'12-17',2
+77,2016,Crimes Against the Person,Sexual Violation,,F,Adult,'18-24',515
+78,2016,Crimes Against the Person,Sexual Violation,,F,Adult,'25-34',417
+79,2016,Crimes Against the Person,Sexual Violation,,F,Adult,'35-44',181
+80,2016,Crimes Against the Person,Sexual Violation,,F,Adult,'45-54',100
+81,2016,Crimes Against the Person,Sexual Violation,,F,Adult,'55-64',56
+82,2016,Crimes Against the Person,Sexual Violation,,F,Adult,'65+',35
+83,2016,Crimes Against the Person,Sexual Violation,,F,Child,'<12',208
+85,2016,Crimes Against the Person,Sexual Violation,,F,Youth,'12-17',434
+86,2016,Crimes Against the Person,Sexual Violation,,M,Adult,'18-24',43
+87,2016,Crimes Against the Person,Sexual Violation,,M,Adult,'25-34',24
+88,2016,Crimes Against the Person,Sexual Violation,,M,Adult,'35-44',15
+89,2016,Crimes Against the Person,Sexual Violation,,M,Adult,'45-54',11
+90,2016,Crimes Against the Person,Sexual Violation,,M,Adult,'55-64',6
+91,2016,Crimes Against the Person,Sexual Violation,,M,Adult,'65+',2
+92,2016,Crimes Against the Person,Sexual Violation,,M,Child,'<12',87
+94,2016,Crimes Against the Person,Sexual Violation,,M,Youth,'12-17',48
+95,2016,Crimes Against the Person,Sexual Violation,,U,Adult,'18-24',1
+96,2016,Crimes Against the Person,Sexual Violation,,U,Youth,'12-17',1
+97,2017,Crimes Against the Person,Assault,Aggravated Peace Officer,F,Adult,'65+',1
+98,2017,Crimes Against the Person,Assault,Aggravated Peace Officer,M,Adult,'35-44',1
+100,2017,Crimes Against the Person,Assault,Assault Peace Officer,F,Adult,'18-24',1
+101,2015,Crimes Against the Person,Assault,Other,F,Child,'<12',296
+103,2015,Crimes Against the Person,Assault,Other,F,Youth,'12-17',510
+104,2015,Crimes Against the Person,Assault,Other,M,Adult,'18-24',1255
+105,2015,Crimes Against the Person,Assault,Other,M,Adult,'25-34',1700
+106,2015,Crimes Against the Person,Assault,Other,M,Adult,'35-44',1217
+107,2015,Crimes Against the Person,Assault,Other,M,Adult,'45-54',1301
+108,2015,Crimes Against the Person,Assault,Other,M,Adult,'55-64',682
+109,2015,Crimes Against the Person,Assault,Other,M,Adult,'65+',335
+110,2015,Crimes Against the Person,Assault,Other,M,Child,'<12',470
+112,2015,Crimes Against the Person,Robbery,,M,Child,'<12',16
+113,2015,Crimes Against the Person,Assault,Other,M,Youth,'12-17',543
+114,2015,Crimes Against the Person,Assault,Other,U,Adult,'18-24',1
+115,2015,Crimes Against the Person,Assault,Other,U,Adult,'45-54',1
+116,2015,Crimes Against the Person,Other,,F,Adult,'18-24',533
+117,2015,Crimes Against the Person,Other,,F,Adult,'25-34',858
+119,2015,Crimes Against the Person,Other,,F,Adult,'35-44',575
+120,2015,Crimes Against the Person,Robbery,,M,Youth,'12-17',615
+121,2015,Crimes Against the Person,Other,,F,Adult,'45-54',409
+122,2015,Crimes Against the Person,Robbery,,U,Adult,'18-24',1
+123,2015,Crimes Against the Person,Other,,F,Adult,'55-64',184
+124,2015,Crimes Against the Person,Sexual Violation,,F,Adult,'18-24',475
+125,2015,Crimes Against the Person,Other,,F,Adult,'65+',125
+126,2015,Crimes Against the Person,Sexual Violation,,F,Adult,'25-34',362
+127,2015,Crimes Against the Person,Other,,F,Child,'<12',64
+128,2015,Crimes Against the Person,Sexual Violation,,F,Adult,'35-44',180
+130,2015,Crimes Against the Person,Sexual Violation,,F,Adult,'45-54',114
+131,2015,Crimes Against the Person,Other,,F,Youth,'12-17',261
+132,2015,Crimes Against the Person,Sexual Violation,,F,Adult,'55-64',35
+133,2015,Crimes Against the Person,Other,,M,Adult,'18-24',297
+134,2015,Crimes Against the Person,Sexual Violation,,F,Adult,'65+',33
+135,2015,Crimes Against the Person,Other,,M,Adult,'25-34',486
+136,2015,Crimes Against the Person,Sexual Violation,,F,Child,'<12',233
+137,2015,Crimes Against the Person,Other,,M,Adult,'35-44',463
+139,2015,Crimes Against the Person,Other,,M,Adult,'45-54',441
+140,2015,Crimes Against the Person,Sexual Violation,,F,Youth,'12-17',409
+141,2015,Crimes Against the Person,Other,,M,Adult,'55-64',260
+142,2015,Crimes Against the Person,Sexual Violation,,M,Adult,'18-24',41
+143,2015,Crimes Against the Person,Other,,M,Adult,'65+',140
+144,2015,Crimes Against the Person,Sexual Violation,,M,Adult,'25-34',31
+145,2015,Crimes Against the Person,Other,,M,Child,'<12',89
+146,2015,Crimes Against the Person,Sexual Violation,,M,Adult,'35-44',15
+148,2015,Crimes Against the Person,Sexual Violation,,M,Adult,'45-54',14
+149,2015,Crimes Against the Person,Other,,M,Youth,'12-17',173
+150,2015,Crimes Against the Person,Sexual Violation,,M,Adult,'55-64',4
+151,2015,Crimes Against the Person,Other,,U,Adult,'25-34',1
+152,2015,Crimes Against the Person,Other,,U,Adult,'35-44',1
+154,2015,Crimes Against the Person,Robbery,,F,Adult,'18-24',190
+155,2015,Crimes Against the Person,Robbery,,F,Adult,'25-34',175
+156,2015,Crimes Against the Person,Robbery,,F,Adult,'35-44',109
+157,2015,Crimes Against the Person,Robbery,,F,Adult,'45-54',136
+158,2015,Crimes Against the Person,Robbery,,F,Adult,'55-64',78
+159,2015,Crimes Against the Person,Robbery,,F,Adult,'65+',61
+160,2015,Crimes Against the Person,Robbery,,F,Child,'<12',8
+162,2015,Crimes Against the Person,Robbery,,F,Youth,'12-17',66
+163,2015,Crimes Against the Person,Robbery,,M,Adult,'18-24',634
+164,2015,Crimes Against the Person,Robbery,,M,Adult,'25-34',404
+165,2015,Crimes Against the Person,Robbery,,M,Adult,'35-44',200
+166,2015,Crimes Against the Person,Robbery,,M,Adult,'45-54',227
+167,2015,Crimes Against the Person,Robbery,,M,Adult,'55-64',154
+168,2015,Crimes Against the Person,Robbery,,M,Adult,'65+',94
+169,2015,Crimes Against the Person,Sexual Violation,,M,Adult,'65+',9
+170,2015,Crimes Against the Person,Sexual Violation,,M,Child,'<12',100
+172,2015,Crimes Against the Person,Sexual Violation,,M,Youth,'12-17',70
+174,2016,Crimes Against the Person,Assault,Assault Peace Officer,F,Adult,'18-24',3
+175,2016,Crimes Against the Person,Assault,Assault Peace Officer,F,Adult,'25-34',14
+176,2016,Crimes Against the Person,Assault,Assault Peace Officer,F,Adult,'35-44',5
+177,2016,Crimes Against the Person,Assault,Assault Peace Officer,F,Adult,'45-54',6
+179,2016,Crimes Against the Person,Assault,Assault Peace Officer,M,Adult,'18-24',3
+180,2016,Crimes Against the Person,Assault,Assault Peace Officer,M,Adult,'25-34',33
+181,2016,Crimes Against the Person,Assault,Assault Peace Officer,M,Adult,'35-44',26
+182,2016,Crimes Against the Person,Assault,Assault Peace Officer,M,Adult,'45-54',13
+183,2016,Crimes Against the Person,Assault,Assault Peace Officer,M,Adult,'55-64',5
+184,2016,Crimes Against the Person,Assault,Assault Peace Officer,M,Adult,'65+',1
+186,2016,Crimes Against the Person,Assault,Assault Peace Officer Weapon/Bodily Harm,F,Adult,'35-44',2
+187,2016,Crimes Against the Person,Assault,Assault Peace Officer Weapon/Bodily Harm,F,Adult,'45-54',1
+189,2016,Crimes Against the Person,Assault,Assault Peace Officer Weapon/Bodily Harm,M,Adult,'25-34',1
+190,2016,Crimes Against the Person,Assault,Assault Peace Officer Weapon/Bodily Harm,M,Adult,'45-54',5
+192,2016,Crimes Against the Person,Assault,Assault Resist Arrest,F,Adult,'18-24',11
+193,2016,Crimes Against the Person,Assault,Assault Resist Arrest,F,Adult,'25-34',13
+194,2016,Crimes Against the Person,Assault,Assault Resist Arrest,F,Adult,'35-44',11
+195,2016,Crimes Against the Person,Assault,Assault Resist Arrest,F,Adult,'45-54',2
+196,2016,Crimes Against the Person,Assault,Assault Resist Arrest,F,Adult,'55-64',1
+197,2016,Crimes Against the Person,Assault,Assault Resist Arrest,F,Adult,'65+',1
+199,2016,Crimes Against the Person,Assault,Assault Resist Arrest,M,Adult,'18-24',49
+200,2016,Crimes Against the Person,Assault,Assault Resist Arrest,M,Adult,'25-34',80
+201,2017,Crimes Against the Person,Assault,Assault Peace Officer,F,Adult,'25-34',17
+202,2017,Crimes Against the Person,Assault,Assault Peace Officer,F,Adult,'35-44',11
+203,2017,Crimes Against the Person,Assault,Assault Peace Officer,F,Adult,'45-54',7
+204,2017,Crimes Against the Person,Assault,Assault Peace Officer,F,Adult,'55-64',3
+206,2017,Crimes Against the Person,Assault,Assault Peace Officer,M,Adult,'18-24',4
+207,2017,Crimes Against the Person,Assault,Assault Peace Officer,M,Adult,'25-34',51
+208,2017,Crimes Against the Person,Assault,Assault Peace Officer,M,Adult,'35-44',52
+209,2017,Crimes Against the Person,Assault,Assault Peace Officer,M,Adult,'45-54',32
+210,2017,Crimes Against the Person,Assault,Assault Peace Officer,M,Adult,'55-64',4
+211,2017,Crimes Against the Person,Assault,Assault Peace Officer,M,Adult,'65+',3
+214,2017,Crimes Against the Person,Assault,Assault Peace Officer Weapon/Bodily Harm,F,Adult,'25-34',4
+216,2017,Crimes Against the Person,Assault,Assault Peace Officer Weapon/Bodily Harm,M,Adult,'18-24',2
+217,2017,Crimes Against the Person,Assault,Assault Peace Officer Weapon/Bodily Harm,M,Adult,'25-34',3
+218,2017,Crimes Against the Person,Assault,Assault Peace Officer Weapon/Bodily Harm,M,Adult,'35-44',8
+219,2017,Crimes Against the Person,Assault,Assault Peace Officer Weapon/Bodily Harm,M,Adult,'45-54',3
+220,2017,Crimes Against the Person,Assault,Assault Peace Officer Weapon/Bodily Harm,M,Adult,'55-64',3
+221,2017,Crimes Against the Person,Assault,Assault Peace Officer Weapon/Bodily Harm,M,Adult,'65+',1
+223,2017,Crimes Against the Person,Assault,Assault Resist Arrest,F,Adult,'18-24',10
+224,2017,Crimes Against the Person,Assault,Assault Resist Arrest,F,Adult,'25-34',15
+225,2017,Crimes Against the Person,Assault,Assault Resist Arrest,F,Adult,'35-44',3
+226,2017,Crimes Against the Person,Assault,Assault Resist Arrest,F,Adult,'45-54',5
+227,2017,Crimes Against the Person,Assault,Assault Resist Arrest,F,Adult,'55-64',4
+229,2017,Crimes Against the Person,Assault,Assault Resist Arrest,M,Adult,'18-24',76
+230,2017,Crimes Against the Person,Assault,Assault Resist Arrest,M,Adult,'25-34',76
+231,2017,Crimes Against the Person,Assault,Assault Resist Arrest,M,Adult,'35-44',31
+232,2017,Crimes Against the Person,Assault,Assault Resist Arrest,M,Adult,'45-54',27
+233,2017,Crimes Against the Person,Assault,Assault Resist Arrest,M,Adult,'55-64',7
+234,2017,Crimes Against the Person,Assault,Assault Resist Arrest,M,Adult,'65+',4
+236,2017,Crimes Against the Person,Assault,Assault Resist Arrest,M,Youth,'12-17',2
+237,2017,Crimes Against the Person,Assault,Other,F,Adult,'18-24',1419
+238,2017,Crimes Against the Person,Assault,Other,F,Adult,'25-34',2061
+239,2017,Crimes Against the Person,Assault,Other,F,Adult,'35-44',1375
+240,2017,Crimes Against the Person,Assault,Other,F,Adult,'45-54',999
+241,2017,Crimes Against the Person,Assault,Other,F,Adult,'55-64',489
+242,2017,Crimes Against the Person,Assault,Other,F,Adult,'65+',366
+243,2017,Crimes Against the Person,Assault,Other,F,Child,'<12',290
+245,2017,Crimes Against the Person,Assault,Other,F,Youth,'12-17',602
+246,2017,Crimes Against the Person,Assault,Other,M,Adult,'18-24',1316
+247,2017,Crimes Against the Person,Assault,Other,M,Adult,'25-34',1935
+248,2017,Crimes Against the Person,Assault,Other,M,Adult,'35-44',1305
+249,2017,Crimes Against the Person,Assault,Other,M,Adult,'45-54',1316
+250,2017,Crimes Against the Person,Assault,Other,M,Adult,'55-64',801
+251,2016,Crimes Against the Person,Assault,Assault Resist Arrest,M,Adult,'35-44',42
+252,2016,Crimes Against the Person,Assault,Assault Resist Arrest,M,Adult,'45-54',24
+253,2016,Crimes Against the Person,Assault,Assault Resist Arrest,M,Adult,'55-64',4
+254,2016,Crimes Against the Person,Assault,Assault Resist Arrest,M,Adult,'65+',2
+256,2016,Crimes Against the Person,Assault,Assault Resist Arrest,M,Youth,'12-17',1
+257,2016,Crimes Against the Person,Assault,Assault Resist Arrest,U,Adult,'25-34',1
+258,2016,Crimes Against the Person,Assault,Assault Resist Arrest,U,Adult,'35-44',2
+260,2016,Crimes Against the Person,Assault,Other,F,Adult,'18-24',1498
+261,2016,Crimes Against the Person,Assault,Other,F,Adult,'25-34',2008
+262,2016,Crimes Against the Person,Assault,Other,F,Adult,'35-44',1310
+263,2016,Crimes Against the Person,Assault,Other,F,Adult,'45-54',936
+264,2016,Crimes Against the Person,Assault,Other,F,Adult,'55-64',485
+265,2016,Crimes Against the Person,Assault,Other,F,Adult,'65+',365
+266,2016,Crimes Against the Person,Assault,Other,F,Child,'<12',260
+268,2016,Crimes Against the Person,Assault,Other,F,Youth,'12-17',575
+269,2016,Crimes Against the Person,Assault,Other,M,Adult,'18-24',1248
+270,2016,Crimes Against the Person,Assault,Other,M,Adult,'25-34',1857
+271,2016,Crimes Against the Person,Assault,Other,M,Adult,'35-44',1316
+272,2016,Crimes Against the Person,Assault,Other,M,Adult,'45-54',1324
+273,2016,Crimes Against the Person,Assault,Other,M,Adult,'55-64',757
+274,2016,Crimes Against the Person,Assault,Other,M,Adult,'65+',353
+275,2016,Crimes Against the Person,Assault,Other,M,Child,'<12',519
+277,2016,Crimes Against the Person,Assault,Other,M,Youth,'12-17',624
+278,2016,Crimes Against the Person,Assault,Other,U,Adult,'18-24',1
+279,2016,Crimes Against the Person,Assault,Other,U,Adult,'25-34',1
+280,2016,Crimes Against the Person,Assault,Other,U,Adult,'35-44',1
+281,2016,Crimes Against the Person,Assault,Other,U,Adult,'55-64',1
+283,2016,Crimes Against the Person,Other,,F,Adult,'18-24',471
+284,2016,Crimes Against the Person,Other,,F,Adult,'25-34',739
+285,2016,Crimes Against the Person,Other,,F,Adult,'35-44',516
+286,2016,Crimes Against the Person,Other,,F,Adult,'45-54',424
+287,2016,Crimes Against the Person,Other,,F,Adult,'55-64',185
+288,2016,Crimes Against the Person,Other,,F,Adult,'65+',102
+289,2016,Crimes Against the Person,Other,,F,Child,'<12',60
+291,2016,Crimes Against the Person,Other,,F,Youth,'12-17',235
+292,2016,Crimes Against the Person,Other,,M,Adult,'18-24',278
+293,2016,Crimes Against the Person,Other,,M,Adult,'25-34',466
+294,2016,Crimes Against the Person,Other,,M,Adult,'35-44',404
+295,2016,Crimes Against the Person,Other,,M,Adult,'45-54',374
+296,2016,Crimes Against the Person,Other,,M,Adult,'55-64',214
+297,2016,Crimes Against the Person,Other,,M,Adult,'65+',94
+298,2016,Crimes Against the Person,Other,,M,Child,'<12',74
+300,2016,Crimes Against the Person,Other,,M,Youth,'12-17',148
+301,2014,Crimes Against the Person,Assault,Other,M,Youth,'12-17',558
+302,2014,Crimes Against the Person,Other,,F,Adult,'18-24',476
+303,2014,Crimes Against the Person,Other,,F,Adult,'25-34',689
+304,2014,Crimes Against the Person,Other,,F,Adult,'35-44',497
+305,2014,Crimes Against the Person,Other,,F,Adult,'45-54',399
+306,2014,Crimes Against the Person,Other,,F,Adult,'55-64',194
+307,2014,Crimes Against the Person,Other,,F,Adult,'65+',83
+308,2014,Crimes Against the Person,Other,,F,Child,'<12',68
+310,2014,Crimes Against the Person,Other,,F,Youth,'12-17',216
+311,2014,Crimes Against the Person,Other,,M,Adult,'18-24',222
+312,2014,Crimes Against the Person,Other,,M,Adult,'25-34',412
+313,2014,Crimes Against the Person,Other,,M,Adult,'35-44',378
+314,2014,Crimes Against the Person,Other,,M,Adult,'45-54',359
+315,2014,Crimes Against the Person,Other,,M,Adult,'55-64',198
+316,2014,Crimes Against the Person,Other,,M,Adult,'65+',95
+317,2014,Crimes Against the Person,Other,,M,Child,'<12',75
+319,2014,Crimes Against the Person,Other,,M,Youth,'12-17',164
+321,2014,Crimes Against the Person,Robbery,,F,Adult,'18-24',244
+322,2014,Crimes Against the Person,Robbery,,F,Adult,'25-34',198
+323,2014,Crimes Against the Person,Robbery,,F,Adult,'35-44',120
+324,2014,Crimes Against the Person,Robbery,,F,Adult,'45-54',138
+325,2014,Crimes Against the Person,Robbery,,F,Adult,'55-64',70
+326,2014,Crimes Against the Person,Robbery,,F,Adult,'65+',61
+327,2014,Crimes Against the Person,Robbery,,F,Child,'<12',6
+329,2014,Crimes Against the Person,Robbery,,F,Youth,'12-17',70
+330,2014,Crimes Against the Person,Robbery,,M,Adult,'18-24',674
+331,2014,Crimes Against the Person,Robbery,,M,Adult,'25-34',422
+332,2014,Crimes Against the Person,Robbery,,M,Adult,'35-44',223
+333,2014,Crimes Against the Person,Robbery,,M,Adult,'45-54',214
+334,2014,Crimes Against the Person,Robbery,,M,Adult,'55-64',113
+335,2014,Crimes Against the Person,Robbery,,M,Adult,'65+',85
+336,2014,Crimes Against the Person,Robbery,,M,Child,'<12',29
+338,2014,Crimes Against the Person,Robbery,,M,Youth,'12-17',658
+339,2014,Crimes Against the Person,Robbery,,U,Adult,'25-34',2
+340,2014,Crimes Against the Person,Robbery,,U,Adult,'55-64',1
+342,2014,Crimes Against the Person,Sexual Violation,,F,Adult,'18-24',477
+343,2014,Crimes Against the Person,Sexual Violation,,F,Adult,'25-34',354
+344,2014,Crimes Against the Person,Sexual Violation,,F,Adult,'35-44',154
+345,2014,Crimes Against the Person,Sexual Violation,,F,Adult,'45-54',102
+346,2014,Crimes Against the Person,Sexual Violation,,F,Adult,'55-64',43
+347,2014,Crimes Against the Person,Sexual Violation,,F,Adult,'65+',34
+348,2014,Crimes Against the Person,Sexual Violation,,F,Child,'<12',242
+350,2014,Crimes Against the Person,Sexual Violation,,F,Youth,'12-17',399
+351,2014,Crimes Against the Person,Sexual Violation,,M,Adult,'18-24',23
+352,2014,Crimes Against the Person,Sexual Violation,,M,Adult,'25-34',29
+353,2014,Crimes Against the Person,Sexual Violation,,M,Adult,'35-44',9
+354,2014,Crimes Against the Person,Sexual Violation,,M,Adult,'45-54',13
+355,2014,Crimes Against the Person,Sexual Violation,,M,Adult,'55-64',7
+356,2014,Crimes Against the Person,Sexual Violation,,M,Adult,'65+',2
+357,2014,Crimes Against the Person,Sexual Violation,,M,Child,'<12',106
+359,2014,Crimes Against the Person,Sexual Violation,,M,Youth,'12-17',70
+361,2015,Crimes Against the Person,Assault,Assault Peace Officer,F,Adult,'25-34',4
+362,2015,Crimes Against the Person,Assault,Assault Peace Officer,F,Adult,'35-44',7
+363,2015,Crimes Against the Person,Assault,Assault Peace Officer,F,Adult,'45-54',2
+364,2015,Crimes Against the Person,Assault,Assault Peace Officer,F,Adult,'65+',2
+366,2015,Crimes Against the Person,Assault,Assault Peace Officer,M,Adult,'18-24',1
+367,2015,Crimes Against the Person,Assault,Assault Peace Officer,M,Adult,'25-34',26
+368,2015,Crimes Against the Person,Assault,Assault Peace Officer,M,Adult,'35-44',25
+369,2015,Crimes Against the Person,Assault,Assault Peace Officer,M,Adult,'45-54',10
+370,2015,Crimes Against the Person,Assault,Assault Peace Officer,M,Adult,'55-64',3
+371,2015,Crimes Against the Person,Assault,Assault Peace Officer,M,Adult,'65+',5
+374,2015,Crimes Against the Person,Assault,Assault Peace Officer Weapon/Bodily Harm,F,Adult,'25-34',1
+376,2015,Crimes Against the Person,Assault,Assault Peace Officer Weapon/Bodily Harm,M,Adult,'18-24',1
+377,2015,Crimes Against the Person,Assault,Assault Peace Officer Weapon/Bodily Harm,M,Adult,'35-44',1
+378,2015,Crimes Against the Person,Assault,Assault Peace Officer Weapon/Bodily Harm,M,Adult,'45-54',2
+379,2015,Crimes Against the Person,Assault,Assault Peace Officer Weapon/Bodily Harm,M,Adult,'55-64',1
+381,2015,Crimes Against the Person,Assault,Assault Resist Arrest,F,Adult,'18-24',10
+382,2015,Crimes Against the Person,Assault,Assault Resist Arrest,F,Adult,'25-34',16
+383,2015,Crimes Against the Person,Assault,Assault Resist Arrest,F,Adult,'35-44',4
+384,2015,Crimes Against the Person,Assault,Assault Resist Arrest,F,Adult,'45-54',3
+385,2015,Crimes Against the Person,Assault,Assault Resist Arrest,F,Adult,'55-64',2
+386,2015,Crimes Against the Person,Assault,Assault Resist Arrest,F,Adult,'65+',1
+388,2015,Crimes Against the Person,Assault,Assault Resist Arrest,M,Adult,'18-24',34
+389,2015,Crimes Against the Person,Assault,Assault Resist Arrest,M,Adult,'25-34',84
+390,2015,Crimes Against the Person,Assault,Assault Resist Arrest,M,Adult,'35-44',31
+391,2015,Crimes Against the Person,Assault,Assault Resist Arrest,M,Adult,'45-54',19
+392,2015,Crimes Against the Person,Assault,Assault Resist Arrest,M,Adult,'55-64',3
+393,2015,Crimes Against the Person,Assault,Assault Resist Arrest,M,Adult,'65+',3
+395,2015,Crimes Against the Person,Assault,Other,F,Adult,'18-24',1458
+396,2015,Crimes Against the Person,Assault,Other,F,Adult,'25-34',2043
+397,2015,Crimes Against the Person,Assault,Other,F,Adult,'35-44',1268
+398,2015,Crimes Against the Person,Assault,Other,F,Adult,'45-54',973
+399,2015,Crimes Against the Person,Assault,Other,F,Adult,'55-64',438
+400,2015,Crimes Against the Person,Assault,Other,F,Adult,'65+',305
+401,2017,Crimes Against the Person,Assault,Other,M,Adult,'65+',393
+402,2017,Crimes Against the Person,Assault,Other,M,Child,'<12',488
+404,2017,Crimes Against the Person,Assault,Other,M,Youth,'12-17',642
+405,2017,Crimes Against the Person,Assault,Other,U,Adult,'25-34',1
+406,2017,Crimes Against the Person,Assault,Other,U,Adult,'45-54',1
+407,2017,Crimes Against the Person,Assault,Other,U,Child,'<12',10
+409,2017,Crimes Against the Person,Other,,F,Adult,'18-24',460
+410,2017,Crimes Against the Person,Other,,F,Adult,'25-34',709
+411,2017,Crimes Against the Person,Other,,F,Adult,'35-44',495
+412,2017,Crimes Against the Person,Other,,F,Adult,'45-54',346
+413,2017,Crimes Against the Person,Other,,F,Adult,'55-64',205
+414,2017,Crimes Against the Person,Other,,F,Adult,'65+',102
+415,2017,Crimes Against the Person,Other,,F,Child,'<12',76
+417,2017,Crimes Against the Person,Other,,F,Youth,'12-17',231
+418,2017,Crimes Against the Person,Other,,M,Adult,'18-24',293
+419,2017,Crimes Against the Person,Other,,M,Adult,'25-34',485
+420,2017,Crimes Against the Person,Other,,M,Adult,'35-44',390
+421,2017,Crimes Against the Person,Other,,M,Adult,'45-54',369
+422,2017,Crimes Against the Person,Other,,M,Adult,'55-64',214
+423,2017,Crimes Against the Person,Other,,M,Adult,'65+',99
+424,2017,Crimes Against the Person,Other,,M,Child,'<12',61
+426,2017,Crimes Against the Person,Other,,M,Youth,'12-17',173
+427,2017,Crimes Against the Person,Other,,U,Adult,'25-34',1
+428,2017,Crimes Against the Person,Other,,U,Adult,'45-54',3
+430,2017,Crimes Against the Person,Robbery,,F,Adult,'18-24',214
+431,2017,Crimes Against the Person,Robbery,,F,Adult,'25-34',199
+432,2017,Crimes Against the Person,Robbery,,F,Adult,'35-44',117
+433,2017,Crimes Against the Person,Robbery,,F,Adult,'45-54',141
+434,2017,Crimes Against the Person,Robbery,,F,Adult,'55-64',81
+435,2017,Crimes Against the Person,Robbery,,F,Adult,'65+',46
+436,2017,Crimes Against the Person,Robbery,,F,Child,'<12',6
+438,2017,Crimes Against the Person,Robbery,,F,Youth,'12-17',95
+439,2017,Crimes Against the Person,Robbery,,M,Adult,'18-24',727
+440,2017,Crimes Against the Person,Robbery,,M,Adult,'25-34',491
+441,2017,Crimes Against the Person,Robbery,,M,Adult,'35-44',258
+442,2017,Crimes Against the Person,Robbery,,M,Adult,'45-54',242
+443,2017,Crimes Against the Person,Robbery,,M,Adult,'55-64',180
+445,2018,Crimes Against the Person,Assault,Assault Resist Arrest,M,Adult,'25-34',77
+446,2017,Crimes Against the Person,Robbery,,M,Adult,'65+',72
+447,2017,Crimes Against the Person,Robbery,,M,Child,'<12',19
+449,2017,Crimes Against the Person,Robbery,,M,Youth,'12-17',750
+451,2017,Crimes Against the Person,Robbery,,U,Youth,'12-17',1
+452,2017,Crimes Against the Person,Sexual Violation,,F,Adult,'18-24',514
+454,2019,Crimes Against the Person,Assault,Assault Peace Officer,M,Adult,'18-24',7
+455,2018,Crimes Against the Person,Assault,Assault Resist Arrest,M,Adult,'35-44',20
+456,2019,Crimes Against the Person,Assault,Assault Peace Officer,M,Adult,'25-34',69
+457,2018,Crimes Against the Person,Assault,Assault Resist Arrest,M,Adult,'45-54',26
+458,2019,Crimes Against the Person,Assault,Assault Peace Officer,M,Adult,'35-44',37
+459,2018,Crimes Against the Person,Assault,Assault Resist Arrest,M,Adult,'55-64',5
+460,2019,Crimes Against the Person,Robbery,,U,Youth,'12-17',1
+461,2019,Crimes Against the Person,Assault,Assault Peace Officer,M,Adult,'45-54',37
+462,2018,Crimes Against the Person,Assault,Assault Resist Arrest,M,Adult,'65+',4
+463,2019,Crimes Against the Person,Sexual Violation,,F,Adult,'18-24',564
+464,2019,Crimes Against the Person,Assault,Assault Peace Officer,M,Adult,'55-64',15
+466,2019,Crimes Against the Person,Sexual Violation,,F,Adult,'25-34',451
+467,2019,Crimes Against the Person,Assault,Assault Peace Officer,M,Adult,'65+',15
+468,2018,Crimes Against the Person,Assault,Other,F,Adult,'18-24',1480
+469,2019,Crimes Against the Person,Sexual Violation,,F,Adult,'35-44',262
+471,2018,Crimes Against the Person,Assault,Other,F,Adult,'25-34',2164
+472,2019,Crimes Against the Person,Sexual Violation,,F,Adult,'45-54',130
+474,2018,Crimes Against the Person,Assault,Other,F,Adult,'35-44',1508
+475,2019,Crimes Against the Person,Sexual Violation,,F,Adult,'55-64',58
+476,2019,Crimes Against the Person,Assault,Assault Peace Officer Weapon/Bodily Harm,F,Adult,'25-34',2
+477,2018,Crimes Against the Person,Assault,Other,F,Adult,'45-54',1038
+478,2019,Crimes Against the Person,Sexual Violation,,F,Adult,'65+',64
+479,2019,Crimes Against the Person,Assault,Assault Peace Officer Weapon/Bodily Harm,F,Adult,'35-44',1
+480,2018,Crimes Against the Person,Assault,Other,F,Adult,'55-64',491
+481,2019,Crimes Against the Person,Sexual Violation,,F,Child,'<12',234
+482,2019,Crimes Against the Person,Assault,Assault Peace Officer Weapon/Bodily Harm,F,Adult,'65+',1
+483,2018,Crimes Against the Person,Assault,Other,F,Adult,'65+',396
+486,2018,Crimes Against the Person,Assault,Other,F,Child,'<12',308
+487,2019,Crimes Against the Person,Sexual Violation,,F,Youth,'12-17',538
+488,2019,Crimes Against the Person,Assault,Assault Peace Officer Weapon/Bodily Harm,M,Adult,'25-34',8
+490,2019,Crimes Against the Person,Sexual Violation,,M,Adult,'18-24',61
+491,2019,Crimes Against the Person,Assault,Assault Peace Officer Weapon/Bodily Harm,M,Adult,'35-44',4
+492,2018,Crimes Against the Person,Assault,Other,F,Youth,'12-17',532
+493,2019,Crimes Against the Person,Sexual Violation,,M,Adult,'25-34',63
+494,2019,Crimes Against the Person,Sexual Violation,,M,Adult,'35-44',22
+495,2019,Crimes Against the Person,Sexual Violation,,M,Adult,'45-54',17
+496,2019,Crimes Against the Person,Sexual Violation,,M,Adult,'55-64',11
+497,2019,Crimes Against the Person,Sexual Violation,,M,Adult,'65+',6
+498,2019,Crimes Against the Person,Sexual Violation,,M,Child,'<12',114
+500,2019,Crimes Against the Person,Sexual Violation,,M,Youth,'12-17',90
+501,2019,Crimes Against the Person,Sexual Violation,,U,Child,'<12',1
+503,2019,Crimes Against the Person,Sexual Violation,,U,Youth,'12-17',2
+504,2020,Crimes Against the Person,Assault,Aggravated Peace Officer,M,Adult,'25-34',1
+506,2020,Crimes Against the Person,Assault,Assault Peace Officer,F,Adult,'18-24',3
+507,2020,Crimes Against the Person,Assault,Assault Peace Officer,F,Adult,'25-34',14
+508,2020,Crimes Against the Person,Assault,Assault Peace Officer,F,Adult,'35-44',9
+509,2020,Crimes Against the Person,Assault,Assault Peace Officer,F,Adult,'45-54',7
+510,2020,Crimes Against the Person,Assault,Assault Peace Officer,F,Adult,'65+',1
+512,2020,Crimes Against the Person,Assault,Assault Peace Officer,M,Adult,'18-24',11
+513,2020,Crimes Against the Person,Assault,Assault Peace Officer,M,Adult,'25-34',57
+514,2020,Crimes Against the Person,Assault,Assault Peace Officer,M,Adult,'35-44',26
+515,2020,Crimes Against the Person,Assault,Assault Peace Officer,M,Adult,'45-54',21
+516,2020,Crimes Against the Person,Assault,Assault Peace Officer,M,Adult,'55-64',12
+517,2020,Crimes Against the Person,Assault,Assault Peace Officer,M,Adult,'65+',16
+520,2020,Crimes Against the Person,Assault,Assault Peace Officer Weapon/Bodily Harm,F,Adult,'35-44',1
+521,2020,Crimes Against the Person,Assault,Assault Peace Officer Weapon/Bodily Harm,F,Adult,'55-64',1
+523,2020,Crimes Against the Person,Assault,Assault Peace Officer Weapon/Bodily Harm,M,Adult,'18-24',1
+524,2020,Crimes Against the Person,Assault,Assault Peace Officer Weapon/Bodily Harm,M,Adult,'25-34',3
+525,2020,Crimes Against the Person,Assault,Assault Peace Officer Weapon/Bodily Harm,M,Adult,'35-44',9
+526,2020,Crimes Against the Person,Assault,Assault Peace Officer Weapon/Bodily Harm,M,Adult,'45-54',7
+527,2020,Crimes Against the Person,Assault,Assault Peace Officer Weapon/Bodily Harm,M,Adult,'55-64',2
+528,2020,Crimes Against the Person,Assault,Assault Peace Officer Weapon/Bodily Harm,M,Adult,'65+',1
+531,2019,Crimes Against the Person,Assault,Assault Peace Officer Weapon/Bodily Harm,M,Adult,'45-54',6
+532,2018,Crimes Against the Person,Assault,Other,M,Adult,'18-24',1293
+533,2019,Crimes Against the Person,Assault,Assault Peace Officer Weapon/Bodily Harm,M,Adult,'55-64',1
+534,2018,Crimes Against the Person,Assault,Other,M,Adult,'25-34',1968
+535,2018,Crimes Against the Person,Assault,Other,M,Adult,'35-44',1481
+536,2018,Crimes Against the Person,Assault,Other,M,Adult,'45-54',1361
+537,2018,Crimes Against the Person,Assault,Other,M,Adult,'55-64',917
+538,2018,Crimes Against the Person,Assault,Other,M,Adult,'65+',438
+539,2018,Crimes Against the Person,Assault,Other,M,Child,'<12',445
+541,2018,Crimes Against the Person,Assault,Other,M,Youth,'12-17',592
+542,2018,Crimes Against the Person,Assault,Other,U,Adult,'25-34',2
+543,2018,Crimes Against the Person,Assault,Other,U,Adult,'35-44',1
+544,2018,Crimes Against the Person,Assault,Other,U,Adult,'45-54',1
+546,2018,Crimes Against the Person,Other,,F,Adult,'18-24',417
+547,2018,Crimes Against the Person,Other,,F,Adult,'25-34',633
+548,2018,Crimes Against the Person,Other,,F,Adult,'35-44',483
+549,2018,Crimes Against the Person,Other,,F,Adult,'45-54',344
+550,2018,Crimes Against the Person,Other,,F,Adult,'55-64',170
+551,2018,Crimes Against the Person,Other,,F,Adult,'65+',106
+552,2018,Crimes Against the Person,Other,,F,Child,'<12',78
+554,2018,Crimes Against the Person,Other,,F,Youth,'12-17',226
+555,2018,Crimes Against the Person,Other,,M,Adult,'18-24',319
+556,2018,Crimes Against the Person,Other,,M,Adult,'25-34',479
+557,2018,Crimes Against the Person,Other,,M,Adult,'35-44',407
+558,2018,Crimes Against the Person,Other,,M,Adult,'45-54',387
+559,2018,Crimes Against the Person,Other,,M,Adult,'55-64',251
+560,2018,Crimes Against the Person,Other,,M,Adult,'65+',96
+561,2018,Crimes Against the Person,Other,,M,Child,'<12',64
+563,2018,Crimes Against the Person,Other,,M,Youth,'12-17',166
+564,2018,Crimes Against the Person,Other,,U,Adult,'18-24',1
+565,2018,Crimes Against the Person,Other,,U,Adult,'25-34',2
+566,2018,Crimes Against the Person,Other,,U,Adult,'35-44',2
+567,2018,Crimes Against the Person,Other,,U,Adult,'45-54',1
+569,2019,Crimes Against the Person,Assault,Assault Peace Officer Weapon/Bodily Harm,M,Adult,'65+',1
+570,2018,Crimes Against the Person,Robbery,,F,Adult,'18-24',197
+572,2018,Crimes Against the Person,Robbery,,F,Adult,'25-34',189
+574,2018,Crimes Against the Person,Robbery,,F,Adult,'35-44',116
+575,2019,Crimes Against the Person,Assault,Assault Resist Arrest,F,Adult,'18-24',13
+576,2018,Crimes Against the Person,Robbery,,F,Adult,'45-54',107
+577,2019,Crimes Against the Person,Assault,Assault Resist Arrest,F,Adult,'25-34',10
+578,2018,Crimes Against the Person,Robbery,,F,Adult,'55-64',85
+579,2019,Crimes Against the Person,Assault,Assault Resist Arrest,F,Adult,'35-44',2
+580,2018,Crimes Against the Person,Robbery,,F,Adult,'65+',58
+581,2019,Crimes Against the Person,Assault,Assault Resist Arrest,F,Adult,'45-54',1
+582,2018,Crimes Against the Person,Robbery,,F,Child,'<12',6
+583,2019,Crimes Against the Person,Assault,Assault Resist Arrest,F,Adult,'55-64',2
+585,2019,Crimes Against the Person,Assault,Assault Resist Arrest,F,Adult,'65+',1
+586,2018,Crimes Against the Person,Robbery,,F,Youth,'12-17',57
+587,2018,Crimes Against the Person,Robbery,,M,Adult,'18-24',715
+588,2018,Crimes Against the Person,Robbery,,M,Adult,'25-34',461
+589,2018,Crimes Against the Person,Robbery,,M,Adult,'35-44',248
+590,2018,Crimes Against the Person,Robbery,,M,Adult,'45-54',248
+591,2018,Crimes Against the Person,Robbery,,M,Adult,'55-64',158
+592,2018,Crimes Against the Person,Robbery,,M,Adult,'65+',89
+593,2018,Crimes Against the Person,Robbery,,M,Child,'<12',7
+595,2018,Crimes Against the Person,Robbery,,M,Youth,'12-17',536
+596,2018,Crimes Against the Person,Robbery,,U,Adult,'18-24',1
+597,2018,Crimes Against the Person,Sexual Violation,,F,Adult,'18-24',636
+598,2018,Crimes Against the Person,Sexual Violation,,F,Adult,'25-34',506
+599,2018,Crimes Against the Person,Sexual Violation,,F,Adult,'35-44',230
+600,2018,Crimes Against the Person,Sexual Violation,,F,Adult,'45-54',126
+601,2018,Crimes Against the Person,Sexual Violation,,F,Adult,'55-64',75
+602,2018,Crimes Against the Person,Sexual Violation,,F,Adult,'65+',51
+603,2018,Crimes Against the Person,Sexual Violation,,F,Child,'<12',214
+605,2018,Crimes Against the Person,Sexual Violation,,F,Youth,'12-17',516
+606,2018,Crimes Against the Person,Sexual Violation,,M,Adult,'18-24',53
+607,2018,Crimes Against the Person,Sexual Violation,,M,Adult,'25-34',54
+608,2018,Crimes Against the Person,Sexual Violation,,M,Adult,'35-44',33
+609,2018,Crimes Against the Person,Sexual Violation,,M,Adult,'45-54',17
+610,2018,Crimes Against the Person,Sexual Violation,,M,Adult,'55-64',7
+611,2018,Crimes Against the Person,Sexual Violation,,M,Adult,'65+',4
+612,2018,Crimes Against the Person,Sexual Violation,,M,Child,'<12',81
+614,2018,Crimes Against the Person,Sexual Violation,,M,Youth,'12-17',75
+615,2018,Crimes Against the Person,Sexual Violation,,U,Adult,'25-34',1
+616,2018,Crimes Against the Person,Sexual Violation,,U,Adult,'45-54',1
+617,2018,Crimes Against the Person,Sexual Violation,,U,Child,'<12',1
+621,2019,Crimes Against the Person,Assault,Assault Peace Officer,F,Adult,'18-24',1
+622,2019,Crimes Against the Person,Assault,Assault Peace Officer,F,Adult,'25-34',18
+623,2019,Crimes Against the Person,Assault,Assault Peace Officer,F,Adult,'35-44',11
+624,2019,Crimes Against the Person,Assault,Assault Peace Officer,F,Adult,'45-54',4
+625,2019,Crimes Against the Person,Assault,Assault Peace Officer,F,Adult,'55-64',1
+626,2019,Crimes Against the Person,Assault,Assault Peace Officer,F,Adult,'65+',1
+627,2019,Crimes Against the Person,Assault,Other,M,Child,'<12',504
+630,2019,Crimes Against the Person,Assault,Assault Resist Arrest,M,Adult,'18-24',81
+631,2019,Crimes Against the Person,Assault,Other,M,Youth,'12-17',712
+632,2019,Crimes Against the Person,Assault,Assault Resist Arrest,M,Adult,'25-34',91
+633,2019,Crimes Against the Person,Assault,Other,U,Adult,'18-24',2
+634,2019,Crimes Against the Person,Assault,Assault Resist Arrest,M,Adult,'35-44',30
+635,2019,Crimes Against the Person,Assault,Other,U,Adult,'25-34',1
+636,2019,Crimes Against the Person,Assault,Other,U,Adult,'35-44',1
+637,2019,Crimes Against the Person,Assault,Other,U,Child,'<12',2
+639,2019,Crimes Against the Person,Other,,F,Adult,'18-24',358
+640,2019,Crimes Against the Person,Other,,F,Adult,'25-34',569
+641,2019,Crimes Against the Person,Other,,F,Adult,'35-44',400
+642,2019,Crimes Against the Person,Other,,F,Adult,'45-54',275
+643,2019,Crimes Against the Person,Other,,F,Adult,'55-64',163
+644,2019,Crimes Against the Person,Other,,F,Adult,'65+',79
+645,2019,Crimes Against the Person,Other,,F,Child,'<12',68
+647,2019,Crimes Against the Person,Other,,F,Youth,'12-17',215
+648,2019,Crimes Against the Person,Other,,M,Adult,'18-24',300
+649,2019,Crimes Against the Person,Other,,M,Adult,'25-34',381
+650,2019,Crimes Against the Person,Other,,M,Adult,'35-44',311
+651,2019,Crimes Against the Person,Other,,M,Adult,'45-54',279
+652,2019,Crimes Against the Person,Other,,M,Adult,'55-64',197
+653,2019,Crimes Against the Person,Other,,M,Adult,'65+',82
+654,2019,Crimes Against the Person,Other,,M,Child,'<12',64
+656,2019,Crimes Against the Person,Other,,M,Youth,'12-17',169
+657,2019,Crimes Against the Person,Other,,U,Adult,'25-34',1
+659,2019,Crimes Against the Person,Robbery,,F,Adult,'18-24',183
+660,2019,Crimes Against the Person,Robbery,,F,Adult,'25-34',154
+661,2019,Crimes Against the Person,Robbery,,F,Adult,'35-44',108
+662,2019,Crimes Against the Person,Robbery,,F,Adult,'45-54',102
+663,2019,Crimes Against the Person,Robbery,,F,Adult,'55-64',89
+664,2019,Crimes Against the Person,Robbery,,F,Adult,'65+',61
+665,2019,Crimes Against the Person,Robbery,,F,Child,'<12',6
+667,2019,Crimes Against the Person,Robbery,,F,Youth,'12-17',56
+668,2019,Crimes Against the Person,Robbery,,M,Adult,'18-24',692
+669,2019,Crimes Against the Person,Robbery,,M,Adult,'25-34',472
+670,2019,Crimes Against the Person,Robbery,,M,Adult,'35-44',245
+671,2019,Crimes Against the Person,Robbery,,M,Adult,'45-54',198
+672,2019,Crimes Against the Person,Robbery,,M,Adult,'55-64',177
+673,2019,Crimes Against the Person,Robbery,,M,Adult,'65+',85
+674,2019,Crimes Against the Person,Robbery,,M,Child,'<12',12
+676,2019,Crimes Against the Person,Robbery,,M,Youth,'12-17',555
+677,2019,Crimes Against the Person,Robbery,,U,Adult,'18-24',3
+678,2019,Crimes Against the Person,Robbery,,U,Adult,'25-34',5
+679,2019,Crimes Against the Person,Robbery,,U,Adult,'35-44',1
+680,2019,Crimes Against the Person,Robbery,,U,Adult,'45-54',1
+681,2019,Crimes Against the Person,Assault,Assault Resist Arrest,M,Adult,'45-54',30
+682,2019,Crimes Against the Person,Assault,Assault Resist Arrest,M,Adult,'55-64',12
+683,2019,Crimes Against the Person,Assault,Assault Resist Arrest,M,Adult,'65+',5
+686,2019,Crimes Against the Person,Assault,Other,F,Adult,'18-24',1407
+687,2019,Crimes Against the Person,Assault,Other,F,Adult,'25-34',2300
+688,2019,Crimes Against the Person,Assault,Other,F,Adult,'35-44',1647
+689,2019,Crimes Against the Person,Assault,Other,F,Adult,'45-54',1068
+690,2019,Crimes Against the Person,Assault,Other,F,Adult,'55-64',616
+691,2019,Crimes Against the Person,Assault,Other,F,Adult,'65+',448
+692,2019,Crimes Against the Person,Assault,Other,F,Child,'<12',308
+694,2019,Crimes Against the Person,Assault,Other,F,Youth,'12-17',598
+695,2019,Crimes Against the Person,Assault,Other,M,Adult,'18-24',1360
+696,2019,Crimes Against the Person,Assault,Other,M,Adult,'25-34',2111
+697,2019,Crimes Against the Person,Assault,Other,M,Adult,'35-44',1567
+698,2019,Crimes Against the Person,Assault,Other,M,Adult,'45-54',1324
+699,2019,Crimes Against the Person,Assault,Other,M,Adult,'55-64',985
+700,2019,Crimes Against the Person,Assault,Other,M,Adult,'65+',476
+701,2020,Crimes Against the Person,Assault,Assault Resist Arrest,F,Adult,'18-24',2
+702,2020,Crimes Against the Person,Assault,Assault Resist Arrest,F,Adult,'25-34',6
+703,2020,Crimes Against the Person,Assault,Assault Resist Arrest,F,Adult,'35-44',4
+704,2020,Crimes Against the Person,Assault,Assault Resist Arrest,F,Adult,'45-54',1
+705,2020,Crimes Against the Person,Assault,Assault Resist Arrest,F,Adult,'55-64',1
+707,2020,Crimes Against the Person,Assault,Assault Resist Arrest,M,Adult,'18-24',36
+708,2020,Crimes Against the Person,Assault,Assault Resist Arrest,M,Adult,'25-34',39
+709,2020,Crimes Against the Person,Assault,Assault Resist Arrest,M,Adult,'35-44',19
+710,2020,Crimes Against the Person,Assault,Assault Resist Arrest,M,Adult,'45-54',14
+711,2020,Crimes Against the Person,Assault,Assault Resist Arrest,M,Adult,'55-64',6
+712,2020,Crimes Against the Person,Assault,Assault Resist Arrest,M,Adult,'65+',1
+715,2020,Crimes Against the Person,Assault,Other,F,Adult,'18-24',1268
+716,2020,Crimes Against the Person,Assault,Other,F,Adult,'25-34',2231
+717,2020,Crimes Against the Person,Assault,Other,F,Adult,'35-44',1579
+718,2020,Crimes Against the Person,Assault,Other,F,Adult,'45-54',961
+719,2020,Crimes Against the Person,Assault,Other,F,Adult,'55-64',561
+720,2020,Crimes Against the Person,Assault,Other,F,Adult,'65+',403
+721,2020,Crimes Against the Person,Assault,Other,F,Child,'<12',203
+723,2020,Crimes Against the Person,Assault,Other,F,Youth,'12-17',346
+724,2020,Crimes Against the Person,Assault,Other,M,Adult,'18-24',1059
+725,2020,Crimes Against the Person,Assault,Other,M,Adult,'25-34',1925
+726,2020,Crimes Against the Person,Assault,Other,M,Adult,'35-44',1361
+727,2020,Crimes Against the Person,Assault,Other,M,Adult,'45-54',1267
+728,2020,Crimes Against the Person,Assault,Other,M,Adult,'55-64',999
+729,2020,Crimes Against the Person,Assault,Other,M,Adult,'65+',506
+730,2020,Crimes Against the Person,Assault,Other,M,Child,'<12',287
+732,2020,Crimes Against the Person,Assault,Other,M,Youth,'12-17',354
+733,2020,Crimes Against the Person,Assault,Other,U,Adult,'18-24',2
+734,2020,Crimes Against the Person,Assault,Other,U,Adult,'25-34',7
+735,2020,Crimes Against the Person,Assault,Other,U,Adult,'35-44',2
+736,2020,Crimes Against the Person,Assault,Other,U,Adult,'45-54',2
+737,2020,Crimes Against the Person,Assault,Other,U,Adult,'55-64',3
+738,2020,Crimes Against the Person,Assault,Other,U,Adult,'65+',1
+740,2020,Crimes Against the Person,Assault,Other,U,Youth,'12-17',1
+741,2020,Crimes Against the Person,Other,,F,Adult,'18-24',314
+742,2020,Crimes Against the Person,Other,,F,Adult,'25-34',482
+743,2020,Crimes Against the Person,Other,,F,Adult,'35-44',341
+744,2020,Crimes Against the Person,Other,,F,Adult,'45-54',247
+745,2020,Crimes Against the Person,Other,,F,Adult,'55-64',127
+746,2020,Crimes Against the Person,Other,,F,Adult,'65+',68
+747,2020,Crimes Against the Person,Other,,F,Child,'<12',51
+749,2020,Crimes Against the Person,Other,,F,Youth,'12-17',128
+750,2020,Crimes Against the Person,Other,,M,Adult,'18-24',222
+751,2017,Crimes Against the Person,Sexual Violation,,F,Adult,'25-34',416
+752,2017,Crimes Against the Person,Sexual Violation,,F,Adult,'35-44',200
+753,2017,Crimes Against the Person,Sexual Violation,,F,Adult,'45-54',111
+754,2017,Crimes Against the Person,Sexual Violation,,F,Adult,'55-64',55
+755,2017,Crimes Against the Person,Sexual Violation,,F,Adult,'65+',37
+756,2017,Crimes Against the Person,Sexual Violation,,F,Child,'<12',218
+758,2017,Crimes Against the Person,Sexual Violation,,F,Youth,'12-17',467
+759,2017,Crimes Against the Person,Sexual Violation,,M,Adult,'18-24',62
+760,2017,Crimes Against the Person,Sexual Violation,,M,Adult,'25-34',33
+761,2017,Crimes Against the Person,Sexual Violation,,M,Adult,'35-44',27
+762,2017,Crimes Against the Person,Sexual Violation,,M,Adult,'45-54',18
+763,2017,Crimes Against the Person,Sexual Violation,,M,Adult,'55-64',6
+764,2017,Crimes Against the Person,Sexual Violation,,M,Adult,'65+',6
+765,2017,Crimes Against the Person,Sexual Violation,,M,Child,'<12',74
+767,2017,Crimes Against the Person,Sexual Violation,,M,Youth,'12-17',64
+770,2018,Crimes Against the Person,Assault,Assault Peace Officer,F,Adult,'25-34',16
+771,2018,Crimes Against the Person,Assault,Assault Peace Officer,F,Adult,'35-44',9
+772,2018,Crimes Against the Person,Assault,Assault Peace Officer,F,Adult,'45-54',7
+773,2018,Crimes Against the Person,Assault,Assault Peace Officer,F,Adult,'55-64',2
+774,2018,Crimes Against the Person,Assault,Assault Peace Officer,F,Adult,'65+',4
+776,2018,Crimes Against the Person,Assault,Assault Peace Officer,M,Adult,'18-24',4
+777,2018,Crimes Against the Person,Assault,Assault Peace Officer,M,Adult,'25-34',66
+778,2018,Crimes Against the Person,Assault,Assault Peace Officer,M,Adult,'35-44',46
+779,2018,Crimes Against the Person,Assault,Assault Peace Officer,M,Adult,'45-54',53
+780,2018,Crimes Against the Person,Assault,Assault Peace Officer,M,Adult,'55-64',14
+781,2018,Crimes Against the Person,Assault,Assault Peace Officer,M,Adult,'65+',4
+784,2018,Crimes Against the Person,Assault,Assault Peace Officer Weapon/Bodily Harm,F,Adult,'45-54',1
+785,2018,Crimes Against the Person,Assault,Assault Peace Officer Weapon/Bodily Harm,F,Adult,'65+',1
+787,2018,Crimes Against the Person,Assault,Assault Peace Officer Weapon/Bodily Harm,M,Adult,'18-24',1
+788,2018,Crimes Against the Person,Assault,Assault Peace Officer Weapon/Bodily Harm,M,Adult,'25-34',6
+789,2018,Crimes Against the Person,Assault,Assault Peace Officer Weapon/Bodily Harm,M,Adult,'35-44',15
+790,2018,Crimes Against the Person,Assault,Assault Peace Officer Weapon/Bodily Harm,M,Adult,'45-54',7
+791,2018,Crimes Against the Person,Assault,Assault Peace Officer Weapon/Bodily Harm,M,Adult,'65+',2
+793,2018,Crimes Against the Person,Assault,Assault Resist Arrest,F,Adult,'18-24',18
+794,2018,Crimes Against the Person,Assault,Assault Resist Arrest,F,Adult,'25-34',13
+795,2018,Crimes Against the Person,Assault,Assault Resist Arrest,F,Adult,'35-44',7
+796,2018,Crimes Against the Person,Assault,Assault Resist Arrest,F,Adult,'45-54',3
+797,2018,Crimes Against the Person,Assault,Assault Resist Arrest,F,Adult,'55-64',2
+799,2018,Crimes Against the Person,Assault,Assault Resist Arrest,F,Youth,'12-17',1
+800,2018,Crimes Against the Person,Assault,Assault Resist Arrest,M,Adult,'18-24',59
+801,2021,Crimes Against the Person,Assault,Assault Peace Officer,M,Adult,'18-24',5
+802,2021,Crimes Against the Person,Assault,Assault Peace Officer,M,Adult,'25-34',44
+803,2021,Crimes Against the Person,Assault,Assault Peace Officer,M,Adult,'35-44',49
+804,2021,Crimes Against the Person,Assault,Assault Peace Officer,M,Adult,'45-54',29
+805,2021,Crimes Against the Person,Assault,Assault Peace Officer,M,Adult,'55-64',9
+806,2021,Crimes Against the Person,Assault,Assault Peace Officer,M,Adult,'65+',34
+809,2021,Crimes Against the Person,Assault,Assault Peace Officer Weapon/Bodily Harm,F,Adult,'25-34',2
+810,2021,Crimes Against the Person,Assault,Assault Peace Officer Weapon/Bodily Harm,F,Adult,'35-44',1
+812,2021,Crimes Against the Person,Assault,Assault Peace Officer Weapon/Bodily Harm,M,Adult,'25-34',4
+813,2021,Crimes Against the Person,Assault,Assault Peace Officer Weapon/Bodily Harm,M,Adult,'35-44',2
+814,2021,Crimes Against the Person,Assault,Assault Peace Officer Weapon/Bodily Harm,M,Adult,'45-54',3
+815,2021,Crimes Against the Person,Assault,Assault Peace Officer Weapon/Bodily Harm,M,Adult,'55-64',3
+816,2021,Crimes Against the Person,Assault,Assault Peace Officer Weapon/Bodily Harm,M,Adult,'65+',7
+819,2021,Crimes Against the Person,Assault,Assault Resist Arrest,F,Adult,'18-24',4
+820,2021,Crimes Against the Person,Assault,Assault Resist Arrest,F,Adult,'25-34',6
+821,2021,Crimes Against the Person,Assault,Assault Resist Arrest,F,Adult,'35-44',10
+822,2021,Crimes Against the Person,Assault,Assault Resist Arrest,F,Adult,'55-64',1
+823,2021,Crimes Against the Person,Assault,Assault Resist Arrest,F,Adult,'65+',4
+825,2021,Crimes Against the Person,Assault,Assault Resist Arrest,M,Adult,'18-24',29
+826,2021,Crimes Against the Person,Other,,F,Adult,'45-54',233
+827,2021,Crimes Against the Person,Assault,Assault Resist Arrest,M,Adult,'25-34',41
+828,2021,Crimes Against the Person,Assault,Assault Resist Arrest,M,Adult,'35-44',12
+829,2021,Crimes Against the Person,Assault,Assault Resist Arrest,M,Adult,'45-54',15
+830,2021,Crimes Against the Person,Assault,Assault Resist Arrest,M,Adult,'55-64',3
+831,2021,Crimes Against the Person,Assault,Assault Resist Arrest,M,Adult,'65+',4
+834,2021,Crimes Against the Person,Assault,Other,F,Adult,'18-24',1297
+835,2021,Crimes Against the Person,Assault,Other,F,Adult,'25-34',2365
+836,2021,Crimes Against the Person,Assault,Other,F,Adult,'35-44',1579
+837,2021,Crimes Against the Person,Assault,Other,F,Adult,'45-54',999
+838,2021,Crimes Against the Person,Assault,Other,F,Adult,'55-64',590
+839,2021,Crimes Against the Person,Assault,Other,F,Adult,'65+',435
+840,2021,Crimes Against the Person,Assault,Other,F,Child,'<12',246
+842,2021,Crimes Against the Person,Assault,Other,F,Youth,'12-17',389
+843,2021,Crimes Against the Person,Assault,Other,M,Adult,'18-24',1081
+844,2021,Crimes Against the Person,Assault,Other,M,Adult,'25-34',2086
+845,2021,Crimes Against the Person,Assault,Other,M,Adult,'35-44',1557
+846,2021,Crimes Against the Person,Assault,Other,M,Adult,'45-54',1268
+847,2021,Crimes Against the Person,Assault,Other,M,Adult,'55-64',1099
+848,2021,Crimes Against the Person,Assault,Other,M,Adult,'65+',514
+849,2021,Crimes Against the Person,Assault,Other,M,Child,'<12',299
+851,2021,Crimes Against the Person,Assault,Other,M,Youth,'12-17',472
+852,2021,Crimes Against the Person,Assault,Other,U,Adult,'18-24',2
+853,2021,Crimes Against the Person,Assault,Other,U,Adult,'25-34',5
+854,2021,Crimes Against the Person,Assault,Other,U,Adult,'35-44',3
+855,2021,Crimes Against the Person,Assault,Other,U,Adult,'45-54',6
+856,2021,Crimes Against the Person,Assault,Other,U,Adult,'55-64',1
+858,2021,Crimes Against the Person,Assault,Other,U,Youth,'12-17',2
+859,2021,Crimes Against the Person,Other,,F,Adult,'18-24',281
+860,2021,Crimes Against the Person,Other,,F,Adult,'25-34',509
+861,2021,Crimes Against the Person,Other,,F,Adult,'35-44',372
+862,2020,Crimes Against the Person,Other,,M,Adult,'25-34',384
+863,2021,Crimes Against the Person,Other,,F,Adult,'55-64',147
+864,2020,Crimes Against the Person,Other,,M,Adult,'35-44',263
+865,2021,Crimes Against the Person,Other,,F,Adult,'65+',74
+866,2020,Crimes Against the Person,Other,,M,Adult,'45-54',239
+867,2021,Crimes Against the Person,Other,,F,Child,'<12',35
+868,2020,Crimes Against the Person,Other,,M,Adult,'55-64',176
+870,2020,Crimes Against the Person,Other,,M,Adult,'65+',59
+871,2021,Crimes Against the Person,Other,,F,Youth,'12-17',127
+872,2020,Crimes Against the Person,Other,,M,Child,'<12',74
+873,2021,Crimes Against the Person,Other,,M,Adult,'18-24',200
+875,2021,Crimes Against the Person,Other,,M,Adult,'25-34',333
+876,2020,Crimes Against the Person,Other,,M,Youth,'12-17',92
+877,2021,Crimes Against the Person,Other,,M,Adult,'35-44',315
+878,2020,Crimes Against the Person,Other,,U,Adult,'18-24',1
+879,2021,Crimes Against the Person,Other,,M,Adult,'45-54',278
+880,2020,Crimes Against the Person,Other,,U,Adult,'25-34',1
+881,2020,Crimes Against the Person,Other,,U,Adult,'45-54',4
+882,2020,Crimes Against the Person,Other,,U,Child,'<12',1
+884,2020,Crimes Against the Person,Other,,U,Youth,'12-17',1
+885,2020,Crimes Against the Person,Robbery,,F,Adult,'18-24',135
+886,2020,Crimes Against the Person,Robbery,,F,Adult,'25-34',138
+887,2020,Crimes Against the Person,Robbery,,F,Adult,'35-44',102
+888,2020,Crimes Against the Person,Robbery,,F,Adult,'45-54',117
+889,2020,Crimes Against the Person,Robbery,,F,Adult,'55-64',65
+890,2020,Crimes Against the Person,Robbery,,F,Adult,'65+',46
+891,2020,Crimes Against the Person,Robbery,,F,Child,'<12',4
+893,2020,Crimes Against the Person,Robbery,,F,Youth,'12-17',49
+894,2020,Crimes Against the Person,Robbery,,M,Adult,'18-24',448
+895,2020,Crimes Against the Person,Robbery,,M,Adult,'25-34',380
+896,2020,Crimes Against the Person,Robbery,,M,Adult,'35-44',204
+897,2020,Crimes Against the Person,Robbery,,M,Adult,'45-54',189
+898,2020,Crimes Against the Person,Robbery,,M,Adult,'55-64',138
+899,2020,Crimes Against the Person,Robbery,,M,Adult,'65+',84
+900,2020,Crimes Against the Person,Robbery,,M,Child,'<12',4
+902,2020,Crimes Against the Person,Robbery,,M,Youth,'12-17',235
+903,2020,Crimes Against the Person,Sexual Violation,,F,Adult,'18-24',449
+904,2020,Crimes Against the Person,Sexual Violation,,F,Adult,'25-34',455
+905,2020,Crimes Against the Person,Sexual Violation,,F,Adult,'35-44',222
+906,2020,Crimes Against the Person,Sexual Violation,,F,Adult,'45-54',104
+907,2020,Crimes Against the Person,Sexual Violation,,F,Adult,'55-64',51
+908,2020,Crimes Against the Person,Sexual Violation,,F,Adult,'65+',57
+909,2020,Crimes Against the Person,Sexual Violation,,F,Child,'<12',208
+911,2020,Crimes Against the Person,Sexual Violation,,F,Youth,'12-17',390
+912,2020,Crimes Against the Person,Sexual Violation,,M,Adult,'18-24',28
+913,2020,Crimes Against the Person,Sexual Violation,,M,Adult,'25-34',42
+914,2020,Crimes Against the Person,Sexual Violation,,M,Adult,'35-44',15
+915,2020,Crimes Against the Person,Sexual Violation,,M,Adult,'45-54',15
+916,2020,Crimes Against the Person,Sexual Violation,,M,Adult,'55-64',7
+917,2020,Crimes Against the Person,Sexual Violation,,M,Adult,'65+',3
+918,2020,Crimes Against the Person,Sexual Violation,,M,Child,'<12',86
+920,2020,Crimes Against the Person,Sexual Violation,,M,Youth,'12-17',58
+921,2020,Crimes Against the Person,Sexual Violation,,U,Adult,'25-34',1
+924,2021,Crimes Against the Person,Assault,Assault Peace Officer,F,Adult,'18-24',1
+925,2021,Crimes Against the Person,Assault,Assault Peace Officer,F,Adult,'25-34',16
+926,2021,Crimes Against the Person,Assault,Assault Peace Officer,F,Adult,'35-44',4
+927,2021,Crimes Against the Person,Assault,Assault Peace Officer,F,Adult,'45-54',1
+928,2021,Crimes Against the Person,Assault,Assault Peace Officer,F,Adult,'55-64',3
+929,2021,Crimes Against the Person,Assault,Assault Peace Officer,F,Adult,'65+',7
+931,2021,Crimes Against the Person,Other,,M,Adult,'55-64',176
+932,2021,Crimes Against the Person,Other,,M,Adult,'65+',95
+933,2021,Crimes Against the Person,Other,,M,Child,'<12',44
+935,2021,Crimes Against the Person,Other,,M,Youth,'12-17',98
+936,2021,Crimes Against the Person,Other,,U,Adult,'25-34',2
+937,2021,Crimes Against the Person,Other,,U,Adult,'35-44',2
+938,2021,Crimes Against the Person,Other,,U,Adult,'65+',1
+940,2021,Crimes Against the Person,Other,,U,Youth,'12-17',1
+941,2021,Crimes Against the Person,Robbery,,F,Adult,'18-24',94
+942,2021,Crimes Against the Person,Robbery,,F,Adult,'25-34',136
+943,2021,Crimes Against the Person,Robbery,,F,Adult,'35-44',83
+944,2021,Crimes Against the Person,Robbery,,F,Adult,'45-54',66
+945,2021,Crimes Against the Person,Robbery,,F,Adult,'55-64',65
+946,2021,Crimes Against the Person,Robbery,,F,Adult,'65+',31
+947,2021,Crimes Against the Person,Robbery,,F,Child,'<12',2
+949,2021,Crimes Against the Person,Robbery,,F,Youth,'12-17',35
+950,2021,Crimes Against the Person,Robbery,,M,Adult,'18-24',295
+951,2021,Crimes Against the Person,Robbery,,M,Adult,'25-34',332
+952,2021,Crimes Against the Person,Robbery,,M,Adult,'35-44',145
+953,2021,Crimes Against the Person,Robbery,,M,Adult,'45-54',130
+954,2021,Crimes Against the Person,Robbery,,M,Adult,'55-64',125
+955,2021,Crimes Against the Person,Robbery,,M,Adult,'65+',69
+956,2021,Crimes Against the Person,Robbery,,M,Child,'<12',12
+958,2021,Crimes Against the Person,Robbery,,M,Youth,'12-17',198
+959,2021,Crimes Against the Person,Robbery,,U,Adult,'18-24',2
+960,2021,Crimes Against the Person,Sexual Violation,,F,Adult,'18-24',457
+961,2021,Crimes Against the Person,Sexual Violation,,F,Adult,'25-34',487
+962,2021,Crimes Against the Person,Sexual Violation,,F,Adult,'35-44',236
+963,2021,Crimes Against the Person,Sexual Violation,,F,Adult,'45-54',124
+964,2021,Crimes Against the Person,Sexual Violation,,F,Adult,'55-64',59
+965,2021,Crimes Against the Person,Sexual Violation,,F,Adult,'65+',51
+966,2021,Crimes Against the Person,Sexual Violation,,F,Child,'<12',289
+968,2021,Crimes Against the Person,Sexual Violation,,F,Youth,'12-17',512
+969,2021,Crimes Against the Person,Sexual Violation,,M,Adult,'18-24',47
+970,2021,Crimes Against the Person,Sexual Violation,,M,Adult,'25-34',67
+971,2021,Crimes Against the Person,Sexual Violation,,M,Adult,'35-44',27
+972,2021,Crimes Against the Person,Sexual Violation,,M,Adult,'45-54',19
+973,2021,Crimes Against the Person,Sexual Violation,,M,Adult,'55-64',16
+974,2021,Crimes Against the Person,Sexual Violation,,M,Adult,'65+',14
+975,2021,Crimes Against the Person,Sexual Violation,,M,Child,'<12',75
+977,2021,Crimes Against the Person,Sexual Violation,,M,Youth,'12-17',64
+978,2021,Crimes Against the Person,Sexual Violation,,U,Adult,'18-24',1
+979,2021,Crimes Against the Person,Sexual Violation,,U,Child,'<12',1

@@ -1,0 +1,26 @@
+e :: forall a. (Integer -> a) -> [a]
+
+After fully expanding the parametricity theorem:
+For any type a, and for any pair of functions f :: Integer -> a and g :: Integer -> a, 
+if f and g are related by some relation R, then the lists [f 0, f 1, f 2, ...] 
+and [g 0, g 1, g 2, ...] are related by the list relation induced by R.
+
+Choose
+We choose the relation R to be (R :: Integer -> a -> Bool). Specifically, we can choose R such that 
+for all x :: Integer and y :: a, R x y holds if and only if y = f x.
+
+Then: (Rewrite the theorem with what you chose)
+Let’s rewrite the theorem with our specific choice of R. 
+If R x y is defined as y = f x, then for any two functions f and g such that
+ R x (f x) and R x (g x), we have the lists [f 0, f 1, f 2, ...] 
+and [g 0, g 1, g 2, ...] related by the list relation induced by R.
+
+The assumption holds because
+The assumption holds because for each x :: Integer, if R x (f x) and R x (g x), 
+it means f x = g x under our chosen relation. This ensures that each element of the lists 
+[f 0, f 1, f 2, ...] and [g 0, g 1, g 2, ...] are related element-wise by R.
+
+Therefore:
+Therefore, the lists [f 0, f 1, f 2, ...] and [g 0, g 1, g 2, ...] are equal because 
+each corresponding element f x and g x is related by R, which under our choice means f x = g x. 
+Thus, e f = e g if f and g are related by R.

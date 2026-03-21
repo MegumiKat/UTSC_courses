@@ -1,0 +1,34 @@
+Prove that if
+  e :: forall a. a -> a
+then
+  for all types AR, for all xr :: AR:
+    xr = e xr
+(So e has to be the identity function.)
+
+Apply the parametricity theorem and expand:
+
+for all types AL, AR, relation (~) between AL and AR:
+  let <a> = (~) in
+  for all xl::AL, xr::AR :
+    if xl <a> xr                               1 mark
+    then e xl <a> e xr                         1 mark
+
+Choose
+
+AL=(), xl=()                                   1 mark
+(~) be the function const xr                   1 mark
+
+xl<a>xr is true because const xr () = xr.      1 mark
+
+Therefore
+
+for all type AR:
+  for all xr::AR:
+    xr = e xr
+
+
+Other choices that work:
+  AL = any type/set you like
+  xl = any element of AL you like
+  (~) be the function const xr
+

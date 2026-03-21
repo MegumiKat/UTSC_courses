@@ -1,0 +1,21 @@
+Please go to the Haskell Wikibook (https://en.wikibooks.org/wiki/Haskell) and
+study the following sections for a start on very basic Haskell and basic usage
+of ghci (Haskell REPL):
+
+Under "Beginner's Track", under "Haskell Basics":
+  from "Getting set up"
+  to and including "Type basics"
+
+The lab exercise is in FixMe.hs.
+testFixMe.hs has some test cases. TestLib.hs is support file for testFixMe.hs
+
+
+Normally you would not write code at the ghci prompt directly (can be done but
+doesn't scale).  Use your favourite editor to put code in a file, then go to
+ghci and use its ":load" command or ":reload", then test as you like.
+
+In case a lab computer says "Command 'ghci' not found", the full path is:
+
+    /usr/local/cms/ghc/9.4.8/bin/ghci
+
+(If you run into this problem, please email Albert the hostname of the lab computer.)

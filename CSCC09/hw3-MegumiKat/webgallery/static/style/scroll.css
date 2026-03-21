@@ -1,0 +1,21 @@
+
+.scroll-container {
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.card-container {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.card-container:hover {
+    background-color: #f0f0f0;
+}

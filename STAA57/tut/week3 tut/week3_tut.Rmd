@@ -1,0 +1,52 @@
+---
+title: "week3_tut"
+author: "Changze Wu_1008837840"
+date: "2024-01-26"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Q1 & Q2
+
+```{r}
+library(tidyverse)
+d =read.csv (file= "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/21c83b32-d5a8-4106-a54f-010dbe49f6f2/resource/55d58477-50f5-490c-8da8-5953e3b26ca4/download/daily-shelter-overnight-service-occupancy-capacity-2022.csv")
+```
+
+##Q3
+
+```{r}
+
+new_data=d %>% filter(PROGRAM_AREA=="Temporary Refugee Response" & SECTOR=="Families")
+```
+
+##Q4
+
+```{r}
+new_data = new_data %>% select(LOCATION_CITY, CAPACITY_ACTUAL_ROOM, OCCUPIED_ROOMS, UNOCCUPIED_ROOMS)
+```
+
+##Q5
+
+```{r}
+summary(new_data %>% select(where(is.numeric)))
+```
+
+##Q6
+
+```{r}
+output = new_data %>% group_by(LOCATION_CITY) %>% summarise(SUM_UNOCCUPIED_ROOMS = sum(UNOCCUPIED_ROOMS))
+
+library(knitr)
+kable(output)
+```
+
+##Q7
+
+```{r}
+new_data %>% mutate(new_var = OCCUPIED_ROOMS == ( new_data$CAPACITY_ACTUAL_ROOM - new_data$UNOCCUPIED_ROOMS)) %>% summarize(sum_check=sum(new_var),N=n())
+```
+

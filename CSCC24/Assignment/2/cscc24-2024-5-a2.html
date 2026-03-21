@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      lang="en"
+      xml:lang="en"
+>
+<head>
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
+<title>CSCC24 2024 Summer Assignment 2</title>
+<style type="text/css">
+h1, h2, h3 { color: blue; }
+dfn { font-style: normal; font-weight: bold; color: blue; }
+table { border-collapse: collapse; }
+th, td { border: 1px solid grey; padding: 0.2em 0.5em; }
+
+/* Code excerpts from loadable source files. */
+div.excerpt {
+  margin: 1em 0em 1em; /* top, left/right, bottom */
+}
+div.excerpt > span {
+  font-size: smaller;
+  background-color: #f0f0f0;
+  padding: 0.25em;
+}
+div.excerpt > pre {
+  background-color: #f0f0f0;
+  overflow: auto;
+  padding: 0.5em;
+  margin: 0px;
+}
+
+/* popup hidable table of contents, and the button to pop it up. */
+#tocdyn {
+  position: fixed;
+  width: 15em;
+  top: 0;
+  right: 0;
+  padding: 8px;
+  border-left: blue solid 1px;
+  border-bottom: blue solid 1px;
+  background-color: white;
+  color: black;
+  font-family: sans-serif;
+  visibility: hidden; /* initial value, to be overruled by javascript */
+}
+#tocbutton {
+  position: fixed;
+  top: 0;
+  right: 0;
+  opacity: 0.9;
+}
+#tocdyn > h1 {
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 0;
+}
+#tocdyn * {
+  text-align: left;
+}
+#tocdyn ul {
+  list-style-type: none;
+}
+#tocdyn > ul {
+  padding-left: 0;
+}
+#tocdyn > ul ul {
+  padding-left: 1em;
+}
+#tocdyn li {
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+ul.task-list{list-style: none;}
+</style>
+<script type="text/javascript">
+function show_toc() {
+  document.getElementById("tocdyn").style.visibility = "visible";
+}
+function hide_toc() {
+  document.getElementById("tocdyn").style.visibility = "";
+}
+</script>
+</head>
+<body id="top">
+<header class="title">
+<h1 class="title">CSCC24 2024 Summer Assignment 2</h1>
+</header>
+<div id="tocbutton"><button type="button" onclick="show_toc();">Table of Contents</button></div>
+<nav id="tocdyn" role="doc-toc" onclick="hide_toc();">
+<p><a href="#top">Top</a></p>
+<ul>
+<li><a href="#ordered-lists-for-sets">Ordered Lists for Sets</a></li>
+<li><a href="#question-1-union-2-marks-automarking-only">Question 1:
+Union (2 marks, automarking only)</a></li>
+<li><a href="#question-2-5-marks">Question 2: (5 marks)</a></li>
+<li><a href="#question-3-1-mark-automarking-only">Question 3 (1 mark,
+automarking only)</a></li>
+<li><a href="#question-4-2-marks-automarking-only">Question 4 (2 marks,
+automarking only)</a></li>
+</ul>
+</nav>
+<div class="line-block">Due: July 9, 11:59 PM<br />
+This assignment is worth 10% of the course grade.</div>
+<p>In this assignment, you will work with an application of lazy
+infinite lists.</p>
+<p>As usual, you should also aim for reasonably efficient algorithms and
+reasonably organized, comprehensible code.</p>
+<p>Code correctness (mostly auto-testing) is worth 90% of the marks;
+code quality is worth 10%.</p>
+<h2 id="ordered-lists-for-sets">Ordered Lists for Sets</h2>
+<p>In this assignment, we use lists to represent sets. Element types are
+instances of Ord; each list has elements in strictly increasing order. A
+list may be infinite, representing an infinite set. E.g., the set of
+even natural numbers is represented by</p>
+<pre><code>0 : 2 : 4 : 6 : 8 : 10 : ...</code></pre>
+<p>We can still perform some set operations meaningfully on infinite
+lists because the elements are in strictly increasing order.</p>
+<h2 id="question-1-union-2-marks-automarking-only">Question 1: Union (2
+marks, automarking only)</h2>
+<p>Implement unioning of two sets. Since the inputs are sorted lists,
+this is like the merge stage in mergesort, except: If an element occurs
+in both input lists, “set union” means you want only one occurrence in
+the output list.</p>
+<pre><code>union :: Ord a =&gt; [a] -&gt; [a] -&gt; [a]</code></pre>
+<h2 id="question-2-5-marks">Question 2: (5 marks)</h2>
+<p>In this question, you will implement a function <code>setBinOp</code>
+that generates this set in our list representation:</p>
+<p><code>setBinOp :: (Ord a, Ord b, Ord c) =&gt; (a -&gt; b -&gt; c) -&gt; [a] -&gt; [b] -&gt; [c]</code><br />
+<code>setBinOp f xs ys</code> = <span
+class="math inline">{<em>f</em> <em>u</em> <em>v</em> ∣ <em>u</em> ∈ <em>x</em><em>s</em>, <em>v</em> ∈ <em>y</em><em>s</em>}</span></p>
+<p>To be sure, this would be very difficult or impossible for infinite
+sets if <span class="math inline"><em>f</em></span> is arbitrary. But it
+is very doable (even efficient) if <span
+class="math inline"><em>f</em></span> is strictly monotonic; more
+precisely:</p>
+<ul>
+<li>If <span class="math inline"><em>x</em> &lt; <em>x</em>′</span>,
+then <span
+class="math inline"><em>f</em> <em>x</em> <em>y</em> &lt; <em>f</em> <em>x</em>′ <em>y</em></span></li>
+<li>If <span class="math inline"><em>y</em> &lt; <em>y</em>′</span>,
+then <span
+class="math inline"><em>f</em> <em>x</em> <em>y</em> &lt; <em>f</em> <em>x</em> <em>y</em>′</span></li>
+</ul>
+<p>The following idea suggests an algorithm. I leave the base cases
+(when <span class="math inline"><em>x</em><em>s</em></span> or <span
+class="math inline"><em>y</em><em>s</em></span> is empty) to you. But
+if</p>
+<ul>
+<li><span class="math inline"><em>x</em><em>s</em></span> has least
+element <span class="math inline"><em>x</em></span> (the 1st element in
+the list), and the remaining elements are <span
+class="math inline"><em>x</em><em>t</em></span></li>
+<li><span class="math inline"><em>y</em><em>s</em></span> has least
+element <span class="math inline"><em>y</em></span>, and the remaining
+elements are <span class="math inline"><em>y</em><em>t</em></span></li>
+</ul>
+<p>then this decomposition is helpful:</p>
+<p><span
+class="math display">{<em>f</em> <em>u</em> <em>v</em> ∣ <em>u</em> ∈ <em>x</em><em>s</em>, <em>v</em> ∈ <em>y</em><em>s</em>} = {<em>f</em> <em>x</em> <em>y</em>} ∪ {<em>f</em> <em>x</em> <em>v</em> ∣ <em>v</em> ∈ <em>y</em><em>t</em>} ∪ {<em>f</em> <em>u</em> <em>v</em> ∣ <em>u</em> ∈ <em>x</em><em>t</em>, <em>v</em> ∈ <em>y</em><em>s</em>}</span></p>
+<p>Note:</p>
+<ul>
+<li><p><span class="math inline"><em>f</em> <em>x</em> <em>y</em></span>
+is the least element of the output set, so you already know that it must
+be the 1st element of the output list.</p></li>
+<li><p>The 3rd component can be done by a recursive call.</p></li>
+<li><p>Although the formula uses <span class="math inline">∪</span>
+twice, it is not a good idea to use <code>union</code> for both! (You
+can try and run into a problem. You can sketch out the lazy evaluation
+to see why). What is the first bullet point suggesting?</p></li>
+</ul>
+<p>Example: If we have the powers of 2 and the powers of 3 in increasing
+order:</p>
+<pre><code>powers2 = iterate (* 2) 1
+powers3 = iterate (* 3) 1</code></pre>
+<p>Then <code>setBinOp (*) powers2 powers3</code> is the list of all
+numbers of the form <span
+class="math inline">2<sup><em>i</em></sup> × 3<sup><em>j</em></sup></span>
+in increasing order.</p>
+<h2 id="question-3-1-mark-automarking-only">Question 3 (1 mark,
+automarking only)</h2>
+<p>We now set up a binary tree type that stores tree sizes. This will be
+used in the next question in which we generate the list of all trees
+ordered by sizes.</p>
+<p>Here are the definitions of the tree type and a wrapper type that
+stores a tree and its size. We use the number of leaf nodes
+(<code>L</code>) as size.</p>
+<pre><code>data BinaryTree = L | B BinaryTree BinaryTree  deriving (Eq, Ord, Show)
+data SizedTree = S Integer BinaryTree   deriving (Eq, Ord, Show)</code></pre>
+<p>Implement:</p>
+<ul>
+<li><p><code>leaf :: SizedTree</code></p>
+<p>(a leaf and its size (1)).</p></li>
+<li><p><code>branch :: SizedTree -&gt; SizedTree -&gt; SizedTree</code></p>
+<p>builds a new tree using the two input trees as children (left child
+is 1st argument), and computes and stores the new size.</p></li>
+</ul>
+<h2 id="question-4-2-marks-automarking-only">Question 4 (2 marks,
+automarking only)</h2>
+<p>Notice that <code>SizedTree</code> derives Ord; the auto-generated
+order compares by size first (simply because that’s the 1st field).</p>
+<p>We note that the set <span class="math inline"><em>S</em></span> of
+all sized trees satisfies this recursive equation:</p>
+<p><span
+class="math display"><em>S</em> = {<em>l</em><em>e</em><em>a</em><em>f</em>} ∪ {<em>b</em><em>r</em><em>a</em><em>n</em><em>c</em><em>h</em> <em>t</em><sub>1</sub> <em>t</em><sub>2</sub> ∣ <em>t</em><sub>1</sub> ∈ <em>S</em>, <em>t</em><sub>2</sub> ∈ <em>S</em>}</span></p>
+<p>Moreoever, it is true that <code>leaf</code> is the least element,
+and <code>branch</code> is strictly monotonic.</p>
+<p>Implement <span class="math inline"><em>S</em></span> as
+<code>allSizedTrees :: [SizedTree]</code> by the recursive equation.</p>
+<p>(Not marked, but recommended: Apply the method of successive
+approximations to see why your code works or doesn’t work.)</p>
+<p>End of questions.</p>
+</body>
+</html>

@@ -1,0 +1,46 @@
+---
+title: "tut 5"
+author: "Changze Wu_1008837840"
+date: "2024-02-09"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(ggplot2)
+library(tidyverse)
+library(knitr)
+library(gganimate)
+library(png)
+library(gifski)
+```
+
+## Q1
+#### i
+```{r }
+d =read.csv (file= "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/21c83b32-d5a8-4106-a54f-010dbe49f6f2/resource/55d58477-50f5-490c-8da8-5953e3b26ca4/download/daily-shelter-overnight-service-occupancy-capacity-2022.csv")
+```
+
+```{r}
+d2 = d %>% filter(LOCATION_CITY != "") %>%
+  group_by(LOCATION_CITY) %>% 
+             summarize(N = n(),
+                       AVE = mean(CAPACITY_ACTUAL_ROOM, na.rm = TRUE),
+                       Quartile_1st = quantile(CAPACITY_ACTUAL_ROOM, 0.25, na.rm = TRUE),
+                       Quartile_3rd = quantile(CAPACITY_ACTUAL_ROOM, 0.75, na.rm = TRUE)) %>%
+                          arrange(desc(N))
+           
+kable(d2)
+```
+\pagebreak
+
+## Q2
+
+```{r eval =FALSE}
+ggplot(d, aes(x = OCCUPIED_ROOMS)) + 
+  geom_histogram() + 
+  transition_states(LOCATION_CITY) +
+  labs(title = "City: {closest_states}")
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

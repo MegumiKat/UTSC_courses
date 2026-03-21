@@ -1,0 +1,51 @@
+---
+title: "Untitled"
+author: "Changze Wu_1008837840"
+date: "2024-03-15"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(knitr)
+```
+
+## Q1
+
+```{r}
+con = c(0.0011,0.0014,0.0018,0.0022,0.0010,0.0016,0.0028,0.0020,0.0015,0.0014,0.0023,0.0017,0.0020)
+per = c(0.0011,0.0010,0.0019,0.0013,0.0011,0.0017,0.0024,0.0020,0.0013,0.0013,0.0017,0.0015,0.0013)
+difference = con - per
+t.test(difference, alternative = "greater")
+```
+by t test, p-value is small,we reject Ho
+\pagebreak
+## Q2
+```{r}
+set.seed(123)
+obs = c(0.43, 1.17, 0.37, 0.47, 0.68,0.58,0.50,2.75,1.47,0.80,1.58,1.53,4.33,4.23,3.25,3.22)
+group_ind = c(rep("good", 8),
+              rep("poor", 8))
+
+obs_diff = mean(obs[group_ind == "good"]) - mean(obs[group_ind == "poor"])
+obs_diff
+```
+```{r}
+set.seed(123)
+sample(group_ind)
+
+permutation = function(){
+  temp_group_int = sample(group_ind)
+  diff = mean(obs[temp_group_int == "good"]) - mean(obs[temp_group_int == "poor"])
+  return(diff)
+}
+
+perm_diff = replicate(10000, permutation())
+hist(perm_diff)
+
+abline(v=obs_diff, lwd= 2, col = "blue")
+
+mean(abs(perm_diff) > abs(obs_diff)) 
+```
+

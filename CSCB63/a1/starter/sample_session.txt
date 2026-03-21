@@ -1,0 +1,71 @@
+Author: Albert Lai.
+
+This sample session is a reminder of some conventions in this course that otherwise could be
+arbitrary, but, if we are all on the same page, automarking will work much better for
+everyone. Namely:
+
+* Base cases for height and size fields. (See tree dumps below.)
+* When deleting a key in the thick middle, replace by successor.
+* Ranks are 1-based, i.e., the smallest key has rank 1.
+
+So, below we will preload keys from sample_input.txt, then do a delete and some rank queries to show
+you the model answers that your solution should match.
+
+This sample is, of course, just for disambiguation, and is not sufficient testing. It is part of
+your job to do your own testing. You are welcome to come to office hours and show us your test
+inputs and outputs for feedback.
+
+
+$
+read 0
+** The tree is now:
+ 0 [1 / 1]
+
+[... eight more reads later ...]
+
+read 9
+** The tree is now:
+    9 [1 / 1]
+   8 [2 / 2]
+  7 [3 / 6]
+    6 [1 / 1]
+   5 [2 / 3]
+    4 [1 / 1]
+ 3 [4 / 10]
+   2 [1 / 1]
+  1 [2 / 3]
+   0 [1 / 1]
+**
+Choose a command: (s)earch, (i)nsert, (d)elete, (r)ank, (f)ind rank, (q)uit
+d
+Delete selected. Enter key to delete: 5
+** The tree is now:
+    9 [1 / 1]
+   8 [2 / 2]
+  7 [3 / 5]
+   6 [2 / 2]
+    4 [1 / 1]
+ 3 [4 / 9]
+   2 [1 / 1]
+  1 [2 / 3]
+   0 [1 / 1]
+**
+Choose a command: (s)earch, (i)nsert, (d)elete, (r)ank, (f)ind rank, (q)uit
+r
+Rank selected. Enter key to search for: 0
+This key has rank 1.
+Choose a command: (s)earch, (i)nsert, (d)elete, (r)ank, (f)ind rank, (q)uit
+r
+Rank selected. Enter key to search for: 9
+This key has rank 9.
+Choose a command: (s)earch, (i)nsert, (d)elete, (r)ank, (f)ind rank, (q)uit
+f
+Find rank selected. Enter rank to find: 1
+This rank was found in node with key 0, at height 1, subtree size 1.
+Choose a command: (s)earch, (i)nsert, (d)elete, (r)ank, (f)ind rank, (q)uit
+f
+Find rank selected. Enter rank to find: 9
+This rank was found in node with key 9, at height 1, subtree size 1.
+Choose a command: (s)earch, (i)nsert, (d)elete, (r)ank, (f)ind rank, (q)uit
+q
+Quit selected. Goodbye!

@@ -1,0 +1,141 @@
+infer {succ :: Int -> Int, ys :: [Bool]}
+      (let len = \xs -> case xs of [] -> 0
+                                   (x:xt) -> succ (len xt)
+       in len ys)
+
+1. Given from the topic: 
+      - succ :: Int -> Int
+      - ys :: [Bool]
+
+2. Analyze the `len` function: 
+      - The function len takes a list xs as input
+      - if xs is an empty list [], len xs return 0. Since 0 is an Int, the return type in this case is Int.
+      - if xs is a non-empty list ( x : xt ), len xs returns succ (len xt). Here, len xt must be an Int because it is passed to succ, which has type Int -> Int.
+
+3. Determine the type of len:
+      - Since len must handle both cases and return an int in both cases, the type of len must be [a] -> int.
+      - Therefore, we can write len :: [a] -> Int
+
+4. Apply len to ys:
+      - Given ys :: [Bool], we apply len to ys:
+      - len ys
+      - Since len :: [a] -> Int and ys :: [Bool], we can substitute a with Bool. Thus, the type of len ys is Int.
+
+5. Putting it all together:
+      - len is a function with type [a] -> Int. 
+      - ys is a list of type [Bool]
+      - Applying len to ys gives us an Int
+
+Thus, the type of the entir expression is Int
+
+
+
+
+alternative:
+Type Inference Proof
+
+Problem:
+Given the following definitions:
+inc :: Int -> Int
+zs :: [Bool]
+
+let length = \xs -> case xs of 
+                      [] -> 0
+                      (x:xt) -> inc (length xt)
+in length zs
+Infer the type of the entire expression.
+
+Proof Process:
+
+Define the type of `length`:
+Let w1 be the type of `length`.
+
+Infer the type of the lambda expression `\xs -> case xs of [] -> 0 (x:xt) -> inc (length xt)`:
+T1 := infer { inc :: Int -> Int, zs :: [Bool], length :: w1 } (\xs -> case xs of [] -> 0 (x:xt) -> inc (length xt))
+
+Define the type of `xs`:
+Let w2 be the type of `xs`.
+
+Infer the type of the case expression `case xs of [] -> 0 (x:xt) -> inc (length xt)`:
+T2 := infer { inc :: Int -> Int, zs :: [Bool], length :: w1, xs :: w2 } (case xs of [] -> 0 (x:xt) -> inc (length xt))
+
+Check if `xs` is of type `[c]`:
+T3 := infer { inc :: Int -> Int, zs :: [Bool], length :: w1, xs :: w2 } xs
+T3 = w2
+unify T3 [c]
+unify-intern w2 [c]
+
+Infer the type of `0`:
+T4 := infer { inc :: Int -> Int, zs :: [Bool], length :: w1, xs :: w2 } 0
+T4 = Int
+
+Infer the type of `inc (length xt)` (with `xt :: [c]` in scope):
+T5 := infer { inc :: Int -> Int, zs :: [Bool], length :: w1, xs :: w2, xt :: [c] } (inc (length xt))
+
+Infer the type of `inc`:
+T5i := infer { inc :: Int -> Int, zs :: [Bool], length :: w1, xs :: w2, xt :: [c] } inc
+T5i = Int -> Int
+
+Infer the type of `length xt`:
+T5l := infer { inc :: Int -> Int, zs :: [Bool], length :: w1, xs :: w2, xt :: [c] } (length xt)
+
+Infer the type of `length`:
+T5ll := infer { inc :: Int -> Int, zs :: [Bool], length :: w1, xs :: w2, xt :: [c] } length
+T5ll = w1
+
+Infer the type of `xt`:
+T5lx := infer { inc :: Int -> Int, zs :: [Bool], length :: w1, xs :: w2, xt :: [c] } xt
+T5lx = [c]
+
+Create a new unknown w3:
+unify T5ll (T5lx -> w3)
+unify-intern w1 ([c] -> w3)
+
+Return the substituted type w3:
+T5l = w3
+
+Create a new unknown w4:
+unify T5i (T5l -> w4)
+unify-intern (Int -> Int) (w3 -> w4)
+
+Return the substituted type w4:
+T5 = Int
+
+Unify T4 and T5:
+unify T4 T5
+unify-intern Int Int
+
+Return the substituted type T4:
+T2 = Int
+return (w2 -> T2) = w2 -> Int
+
+Generalize the type T1:
+T1 = w2 -> Int
+T1g = generalize { inc :: Int -> Int, zs :: [Bool] } (w2 -> Int)
+create a new type variable d for w2
+return (forall d. (w2 -> Int but replace w2 by d)) = forall d. d -> Int
+T1g = forall d. d -> Int
+
+Infer the type of `length zs`:
+T6 := infer { length :: forall d. d -> Int, inc :: Int -> Int, zs :: [Bool] } length
+T := look up length, it is forall d. d -> Int
+create a new unknown w5 for d
+T' = instantiate forall d. d -> Int
+T' = w5 -> Int
+return (w5 -> Int)
+T6 = w5 -> Int
+
+Infer the type of `zs`:
+T7 := infer { length :: forall d. d -> Int, inc :: Int -> Int, zs :: [Bool] } zs
+return [Bool]
+T7 = [Bool]
+
+Create a new unknown w6:
+unify T6 (T7 -> w6)
+unify-intern (w5 -> Int) ([Bool] -> w6)
+
+Return the substituted type w6:
+return (apply-subst w6) = Int
+
+This process ensures the type inference is done correctly for the given problem, concluding that the type of the expression `let length = \xs -> case xs of [] -> 0 (x:xt) -> inc (length xt) in length zs` is Int.
+

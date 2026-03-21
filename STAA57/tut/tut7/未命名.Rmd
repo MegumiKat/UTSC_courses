@@ -1,0 +1,38 @@
+---
+title: "Untitled"
+author: "Changze Wu_1008837840"
+date: "2024-03-01"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#Q1
+```{r}
+data = read.csv(file = "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/21c83b32-d5a8-4106-a54f-010dbe49f6f2/resource/55d58477-50f5-490c-8da8-5953e3b26ca4/download/daily-shelter-overnight-service-occupancy-capacity-2022.csv")
+
+pop = na.omit(data$CAPACITY_ACTUAL_ROOM)
+
+#data %>% select(CAPACITY_ACTUAL_ROOM) -> p
+#p = na.omit(p)
+pop_avg = mean(pop)
+pop_avg
+
+x = sample(pop, size =500)
+qnorm(c(0.1, 0.9), mean=mean(x), sd=sd(x)/sqrt(500))
+t.test(x, conf.level = 0.8)
+```
+
+\pagebreak
+#Q2
+```{r}
+bootstrap = function(){
+  s = sample(x, size = 500, replace = T)
+  return (mean(s))
+}
+bootstrap_x_bar = replicate(100000, bootstrap())
+quantile(bootstrap_x_bar, c(0.1, 0.9))
+```
+

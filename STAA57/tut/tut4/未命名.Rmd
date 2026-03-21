@@ -1,0 +1,49 @@
+---
+title: "Week4 tut"
+author: "Changze Wu_1008837840"
+date: "2024-02-02"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(ggplot2)
+library(dplyr)
+```
+# Q1
+## i
+```{r }
+
+Book1 = read.csv(file = "Book1.csv")
+Book2 = read.csv(file = "Book2.csv")
+```
+## ii
+```{r}
+# Merge the datasets based on "location_id"
+m_d1 = right_join(Book1, Book2, by="location_id")
+```
+## iii
+```{r}
+m_d2 = anti_join(Book2, Book1, by ="location_id")
+```
+## iv
+```{r}
+m_d1 %>% mutate(new_p_code = str_sub(LOCATION_POSTAL_CODE, start = 1, end = 2)) %>% group_by(new_p_code) %>% summarize(new_var = sum(UNOCCUPIED_ROOMS, na.rm = T))
+```
+
+\pagebreak
+
+# Q2
+### i
+```{r}
+ggplot(m_d1, aes(x = CAPACITY_ACTUAL_ROOM, y = UNOCCUPIED_ROOMS, color = LOCATION_CITY, shape = LOCATION_CITY)) + geom_point()
+```
+
+### ii
+```{r}
+m_d1 = m_d1 %>% mutate( LOCATION_CITY = case_when(LOCATION_CITY == "" ~ "UNKNOWN",
+                                    TRUE ~ LOCATION_CITY))
+ggplot(m_d1, aes(x = CAPACITY_ACTUAL_ROOM, y = UNOCCUPIED_ROOMS, color = LOCATION_CITY, shape = LOCATION_CITY)) + geom_point()
+```
+

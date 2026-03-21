@@ -1,0 +1,27 @@
+Given these definitions:
+
+```
+zipPlus [] _ = []
+zipPlus _ [] = []
+zipPlus (x:xs) (y:ys) = x+y : zipPlus xs ys
+
+ts = 1 : zipPlus ts ts
+```
+
+(a) [2 marks] Calculate the successive approximations of ts, up to and including
+ts4.  Show some steps.  You can write ⊥ or _|_ for the bottom/undefined symbol.
+
+ts0 = ⊥
+
+ts1 = 1 : zipPlus ts0 ts0 = 1 : ⊥
+
+ts2 = 1 : zipPlus ts1 ts1 = 1 : (1 + 1) : zipPlus ⊥ ⊥ = 1 : 2 : ⊥
+
+ts3 = 1 : zipPlus ts2 ts2 = 1 : (1 + 1) : zipPlus (2 : ⊥) (2 : ⊥) = 1 : 2 : 4 : ⊥
+
+ts4 = 1 : zipPlus ts3 ts3 = 1 : (1 + 1) : zipPlus (2 : 4 : ⊥) (2 : 4 : ⊥) = 1 : 2 : 4 : 8 : ⊥
+ 
+
+(b) [1 mark] Make a guess and describe what infinite list ts is.
+    ts n = 1 : 2 : 4 : ... : 2^(n-1) : ⊥
+

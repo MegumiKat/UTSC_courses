@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Gallery</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/comment.css">
+    <link rel="stylesheet" href="./style/component.css">
+    <script type="module" src="./js/script.mjs"></script>
+</head>
+
+<body>
+<header>
+    <a href="/" id="title">Web Gallery</a>
+    <a href="/login.html" id="signin_button" class="btn header_btn hidden">Sign in or Sign up</a>
+    <a href="/signout/" id="signout_button" class="btn header_btn hidden">Sign out</a>
+    <button id="imageAdding" type="submit" class="addIcon icon header_btn"></button>
+    <button id="backToGallery" class="backIcon icon header_btn">Back</button>
+</header>
+
+<!-- Image Display -->
+<section id="imageDisplay" class="imageDisplay">
+    <div class="prevImage icon" id="prevImage"></div>
+    <!-- <button class="prevImage" id="prevImage"></button> -->
+    <div id="currentImageContainer" class="currentImageContainer">
+        <img id="currentImage" src="" alt="Image" class="currentImage">
+        <h3 id="currentTitle" class="currentTitle"></h3>
+        <p id="currentAuthor" class="currentAuthor"></p>
+        <div class="deleteImage icon" id="deleteImage"></div>
+    </div>
+
+    <div class="nextImage icon" id="nextImage"></div>
+</section>
+
+<!-- Add Image Form -->
+<div id="addImageForm" class="addImageForm overlay">
+    <form id="imageForm" class="imageForm overlay-content">
+
+        <label for="imageTitle">Title:</label>
+        <input type="text" id="imageTitle" required>
+
+        <label for="imageAuthor">Author:</label>
+        <input type="text" id="imageAuthor" required>
+
+        <label for="imageFile">Image URL:</label>
+        <input type="file" id="imageFile" accept="image/*" required>
+
+        <div class="buttonGroup">
+            <div class="submitIcon icon" id="submitForm"></div>
+            <div class="closeIcon icon" id="closeForm"></div>
+        </div>
+    </form>
+</div>
+
+<!-- Modal for comments -->
+<div id="commentModal" class="commentModal overlay">
+    <div class="modal-content overlay-content">
+        <div class="title">
+            <h2 id="modalImageTitle"></h2>
+            <div class="closeIcon icon" id="closeModal"></div>
+        </div>
+
+        <!-- adding comments -->
+        <form id="modalCommentForm" class="modalCommentForm">
+            <input type="text" id="modalCommentAuthor" placeholder="Enter Name" required>
+            <textarea id="modalCommentContent" placeholder="Enter Comment Content" required></textarea>
+            <div class="submitIcon icon" id="submitComment"></div>
+        </form>
+
+        <!-- comments container -->
+        <div id="modalCommentsList"></div>
+
+        <!-- change the page -->
+        <div id="paginationControls" class="paginationControls">
+            <button id="prevPage" disabled>Previous</button>
+            <button id="nextPage" disabled>Next</button>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    <a href="/credits.html">credits</a>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+---
+title: "Week-1 Interactive Practice"
+output: learnr::tutorial
+runtime: shiny_prerendered
+---
+
+```{r setup, include=FALSE}
+library(learnr)
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+## Topic 1: Quiz
+
+
+
+
+```{r quiz1}
+quiz(
+  question("In which of the following panes the information of created objects such as scalars, vectors or
+data-sets, in any session show up?",
+    answer("source",message = "The source pane is where you can open/edit code files and save for future use."),
+    answer("console",message =  "The console is where you can type in the codes and where R prints the numeric outputs."),
+    answer("Environment", correct = TRUE),
+    answer("Plots/Help/Files", message = "The Plots/Help/Files pane is where you can toggle between any graphical output,
+help pages, or file directories."),
+    allow_retry = TRUE
+  )
+)
+```
+
+
+
+## Topic 2: for-loop
+
+### a) 1 ∗ 2 ∗ 3 ∗ 4 ∗ ..... ∗ 10 =?
+
+We all know that this is actually 10! and computed by the following expression in r.
+```{r factorial,echo=T}
+factorial(10)
+```
+
+How can we compute this using a for-loop?
+```{r multiplication, exercise=TRUE}
+
+```
+
+```{r multiplication-hint}
+s=1
+for (i in 1:10) {
+  
+}
+```
+
+### b) 1 − 2 + 3 − 4 + 5 − .... − 100 =?
+
+Try to solve this using a for-loop and an if() statement inside the loop
+
+```{r add-subtract, exercise=TRUE}
+
+```
+
+
+```{r add-subtract-hint}
+# this following line checks if "i" is divisible by 2 or not
+(i%%2)==0
+```
+
+
+
+
+
+## Topic 3: while-loop
+
+### e) Find the maximum value of N for which 1 + 2 + 3 + ... + N < 4000.
+
+The answer is 88.
+
+\  
+
+
+Try to find this using a while-loop. Your loop should keep adding as long as the cumulative sum does not exceed 4000.
+
+```{r max-index, exercise=TRUE}
+
+```
+
+
+```{r}
+x = rnorm(30)
+
+x
+```
+
+
+```{r}
+
+y = x ^ 2
+plot(x, y)
+```
+

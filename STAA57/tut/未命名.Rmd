@@ -1,0 +1,43 @@
+---
+title: "Untitled"
+author: "Changze Wu_1008837840"
+date: "2024-03-22"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+## Q1
+
+```{r}
+ABE=read.csv(file = "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/4ef82789-e038-44ef-a478-a8f3590c3eb1/resource/979fb513-5186-41e9-bb23-7b5cc6b89915/download/Pre-2023%20Apartment%20Building%20Evaluations.csv")
+ABE=ABE %>% filter(SCORE >=10) 
+plot(y=ABE$SCORE,x=ABE$CONFIRMED_STOREYS)
+
+# ii)“SCORE” and “CONFIRMED_STOREYS” is week positive correlation
+
+m=lm(ABE$SCORE~ABE$CONFIRMED_STOREYS)
+summary(m)
+
+# iv)71.787 is the average score when CONFIRMED STOREYS is zero If CONFIRMED SToREyS goes up by one unit, average score goes up by 0.268 unit.\par\par \newline
+
+# v))The p-value corresponding to the test of $H 8: \beta 2 = 8$ is very small which suggest there is a significant relationship between CONFIRMED STOREys and score.\par
+
+# vi)From the summary, $R~2 = 0.02523$ which indicates that 2.52% variation in Score can be explained by our model. Since it's a very small number, we can say our model is not performing well, We are missing some important independentvariables.
+```
+
+\pagebreak
+## Q2
+
+```{r}
+d=ABE %>% mutate(group_ind = sample(c("train","test"), 
+                                    size=nrow(ABE),
+                                    prob=c(0.6,0.4),
+                                    replace=T)) 
+m=lm(SCORE~CONFIRMED_STOREYS,data=d %>% filter(group_ind=="train"))
+y.hat=predict(m,newdata=d %>% filter(group_ind =="test")) 
+mean((d$SCORE[d$group_ind =="test"] - y.hat) ^ 2)
+```

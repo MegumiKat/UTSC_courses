@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      lang="en"
+      xml:lang="en"
+>
+<head>
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
+<title>CSCC24 2024 Summer Assignment 1</title>
+<style type="text/css">
+h1, h2, h3 { color: blue; }
+dfn { font-style: normal; font-weight: bold; color: blue; }
+table { border-collapse: collapse; }
+th, td { border: 1px solid grey; padding: 0.2em 0.5em; }
+
+/* Code excerpts from loadable source files. */
+div.excerpt {
+  margin: 1em 0em 1em; /* top, left/right, bottom */
+}
+div.excerpt > span {
+  font-size: smaller;
+  background-color: #f0f0f0;
+  padding: 0.25em;
+}
+div.excerpt > pre {
+  background-color: #f0f0f0;
+  overflow: auto;
+  padding: 0.5em;
+  margin: 0px;
+}
+
+/* popup hidable table of contents, and the button to pop it up. */
+#tocdyn {
+  position: fixed;
+  width: 15em;
+  top: 0;
+  right: 0;
+  padding: 8px;
+  border-left: blue solid 1px;
+  border-bottom: blue solid 1px;
+  background-color: white;
+  color: black;
+  font-family: sans-serif;
+  visibility: hidden; /* initial value, to be overruled by javascript */
+}
+#tocbutton {
+  position: fixed;
+  top: 0;
+  right: 0;
+  opacity: 0.9;
+}
+#tocdyn > h1 {
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 0;
+}
+#tocdyn * {
+  text-align: left;
+}
+#tocdyn ul {
+  list-style-type: none;
+}
+#tocdyn > ul {
+  padding-left: 0;
+}
+#tocdyn > ul ul {
+  padding-left: 1em;
+}
+#tocdyn li {
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+ul.task-list{list-style: none;}
+</style>
+<script type="text/javascript">
+function show_toc() {
+  document.getElementById("tocdyn").style.visibility = "visible";
+}
+function hide_toc() {
+  document.getElementById("tocdyn").style.visibility = "";
+}
+</script>
+</head>
+<body id="top">
+<header class="title">
+<h1 class="title">CSCC24 2024 Summer Assignment 1</h1>
+</header>
+<div id="tocbutton"><button type="button" onclick="show_toc();">Table of Contents</button></div>
+<nav id="tocdyn" role="doc-toc" onclick="hide_toc();">
+<p><a href="#top">Top</a></p>
+<ul>
+<li><a href="#question-1-induction-proofs-10-marks">Question 1:
+Induction Proofs [10 marks]</a></li>
+<li><a href="#question-2-avl-trees-10-marks">Question 2: AVL Trees [10
+marks]</a></li>
+</ul>
+</nav>
+<div class="line-block">Due: June 10 11:59PM<br />
+This assignment is worth 10% of the course grade.</div>
+<p>This assignment is about</p>
+<ul>
+<li>induction proofs for recursive functions</li>
+<li>recursive data structures in Haskell</li>
+</ul>
+<p>As usual, you should aim for reasonably efficient algorithms and
+reasonably organized, comprehensible code.</p>
+<p>Code correctness (mostly auto-testing) is worth 90% of the marks;
+code quality is worth 10%.</p>
+<h2 id="question-1-induction-proofs-10-marks">Question 1: Induction
+Proofs [10 marks]</h2>
+<p>The following definitions are given.</p>
+<pre><code>map :: (a -&gt; b) -&gt; [a] -&gt; [b]
+map f [] = []
+map f (x:xs) = f x : map f xs
+
+t :: Integer -&gt; [Integer] -&gt; Integer
+t a [] = a
+t a (x:xs) = t (a+x) xs
+
+inits :: [a] -&gt; [[a]]
+inits [] = [] : []
+inits (x:xs) = [] : map (\ys -&gt; x : ys) (inits xs)
+
+s :: Integer -&gt; [Integer] -&gt; [Integer]
+s a [] = a : []
+s a (x:xs) = a : s (a+x) xs</code></pre>
+<p>Prove the following two statements by structural induction on finite
+lists.</p>
+<ol type="a">
+<li><p>[3 marks] for all finite list xs: map g (map f xs) = map (g . f)
+xs</p></li>
+<li><p>[7 marks] for all finite list xs: for all integer a: map (t a)
+(inits xs) = s a xs</p></li>
+</ol>
+<p>You will find these helpful:</p>
+<ul>
+<li>(g . f) = \x -&gt; g (f x)</li>
+<li>When proving (b), it really helps to assume (a).</li>
+<li>You may do algebra inside a lambda.</li>
+<li>(\x -&gt; f x) = f</li>
+</ul>
+<p>Please hand in your solution in proof.txt.</p>
+<h2 id="question-2-avl-trees-10-marks">Question 2: AVL Trees [10
+marks]</h2>
+<p>AVL trees are binary search trees with an extra condition on shapes
+to ensure logarithmic height, so lookup is guaranteed to stay within
+logarithmic time. Evidently, insert and delete must perform shape checks
+and rotations to fulfill the extra condition. Evidently again, shape
+checks and rotations must not add more than logarithmic time either!</p>
+<p>Whether this is the first time, second time, or last time you see AVL
+trees, please consult <a href="avl.pdf">my past lecture slides</a> for
+details.</p>
+<p>In this question, you will implement insert. Please consult AVLDef.hs
+for definitions and basic helpers. For simplicity, we just have a key,
+no value.</p>
+<p>Suggestions:</p>
+<ul>
+<li>Write a helper function for rebalancing one node. (Or, for making a
+balanced node from parts.) Then <code>insert</code> can use it.</li>
+<li>Write helper functions for rotations. Then the rebalancing function
+can use them. Separating them out reads nicer.</li>
+<li>In the lecture slides, the rotation pictures literally tell you what
+patterns to match for and what results should look like. :)</li>
+<li>Write a helper function for making or updating a node with
+auto-setting its height field. It is highly reusable.</li>
+<li>There is a painless way to ensure bottom-up rebalancing by adding it
+at the right place in recursive <code>insert</code>.</li>
+</ul>
+<p>Please hand in your solution in AVL.hs. (Template provided.)</p>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "microblog",
+  "version": "1.0.0",
+  "main": "app.mjs",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "prod": "node app.mjs",
+    "dev": "nodemon app.mjs",
+    "test": "npx mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "chai": "^5.1.1",
+    "chai-http": "^5.0.0",
+    "express": "^4.21.0",
+    "mocha": "^10.7.3"
+  }
+}

@@ -1,0 +1,12 @@
+.comment {
+    display: flex;
+    flex-flow: flex-start;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    height: auto;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid grey;
+    justify-content: space-between;
+}

@@ -1,0 +1,41 @@
+---
+title: "tut8"
+author: "Changze Wu_1008837840"
+date: "2024-03-08"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(knitr)
+```
+
+## Q1
+```{r}
+data = read.csv(file = "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/4ef82789-e038-44ef-a478-a8f3590c3eb1/resource/979fb513-5186-41e9-bb23-7b5cc6b89915/download/Pre-2023%20Apartment%20Building%20Evaluations.csv")
+
+t.test(data$SCORE, mu = 73, alternative="greater")
+t.test(data$SCORE, mu = 73, alternative="two.sided")
+```
+ii. The null hypothesis ($H_0$) in this case is that the population mean ($\mu$) is equal to 73. The alternative hypothesis ($H_1$) is that the population mean is greater than 73.
+
+The p-value obtained from the t-test is less than the significance level of 0.05. Specifically, the p-value is much smaller, being < 2.2e-16 (essentially 0).
+
+Since the p-value is less than 0.05, we reject the null hypothesis. Therefore, there is sufficient evidence to support the researcher's claim that the average score is higher than 73.
+
+\pagebreak
+
+## Q2
+```{r}
+sample_prop = mean(data$SCORE > 73)
+sample_prop2 = sum(data$SCORE > 73) / length(data$SCORE)
+sample_prop
+sample_prop2
+
+data_2 = data %>% summarize(n = n(), x = sum(SCORE > 73))
+
+data_2
+prop.test(data_2$x, data_2$n, p=0.5)
+```
+

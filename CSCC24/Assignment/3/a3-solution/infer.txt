@@ -1,0 +1,100 @@
+infer {succ :: Int -> Int, ys :: [Bool]}
+      (let len = \xs -> case xs of [] -> 0
+                                   (x:xt) -> succ (len xt)
+       in len ys)
+
+  create unknown ulen for len
+  Tlen := infer {succ :: Int -> Int, ys :: [Bool], len :: ulen}
+                (\xs -> case xs of [] -> 0
+                                   (x:xt) -> succ (len xt))
+    create unknown uxs for xs
+    Tbd := infer {succ :: Int -> Int, ys :: [Bool], len :: ulen, xs :: uxs}
+                 (case xs of [] -> 0
+                             (x:xt) -> succ (len xt))
+      T := infer {succ :: Int -> Int, ys :: [Bool], len :: ulen, xs :: uxs}
+                 xs
+      T = uxs
+      create unknown u
+      unify uxs [u]
+        unify-intern uxs [u]
+                                                               Updated table:
+                                                               uxs := [u]
+      T0 := infer ... 0
+      T0 = Int
+
+      T1 := infer {succ :: Int -> Int, ys :: [Bool], len :: ulen, xs :: uxs,
+                   x :: u, xt :: [u]}
+                  (succ (len xt))
+        Tsucc := infer ... succ
+        Tsucc = Int -> Int
+        Te := infer {succ :: Int -> Int, ys :: [Bool], len :: ulen, xs :: uxs,
+                     x :: u, xt :: [u]}
+                    (len xt)
+          Tf := infer ... len
+          Tf = ulen
+          Te := infer ... xt
+          Te = [u]
+
+          create unknown u2
+          unify Tf (Te -> u2)
+            unify-intern ulen ([u] -> u2)
+                                                               Updated table:
+                                                               uxs := [u]
+                                                               ulen := [u] -> u2
+          return (apply-subst u2) = u2
+        Te = u2
+        create unknown u1
+        unify Tsucc (Te -> u1)
+          unify-intern (Int -> Int) (u2 -> u1)
+                                                               Updated table:
+                                                               uxs := [u]
+                                                               ulen := [u] -> Int
+                                                               u1 := Int
+                                                               u2 := Int
+        return (apply-subst u1) = Int
+      T1 = Int
+
+      unify T0 T1
+        unify-intern Int Int
+      return (apply-subst T0) = Int
+
+    Tbd = Int
+    return (apply-subst (uxs -> Tbd)) = [u] -> Int
+
+  Tlen = [u] -> Int
+
+  Tleng := generalize {succ :: Int -> Int, ys :: [Bool]} ([u] -> Int)
+  Tleng = forall a. [a] -> Int
+
+  infer {succ :: Int -> Int, ys :: [Bool], len :: forall a. [a] -> Int}
+        (len ys)
+    Tf := infer ... len
+      T := lookup len
+      T = forall a. [a] -> Int
+      create unknown ua for a
+      T' := instantiate T
+      T' = [ua] -> Int
+      return T' = [ua] -> Int
+
+      Remark: Perhaps don't require that much chatter, but here is the minimum:
+
+      create unknown ua
+      return [ua] -> Int
+
+    Tf = [ua] -> Int
+    Te := infer ... ys
+    Te = [Bool]
+
+    create unknown u3
+    unify Tf (Te -> u3)
+      unify-intern ([ua] -> Int) ([Bool] -> u3)
+                                                               Updated table:
+                                                               uxs := [u]
+                                                               ulen := [u] -> Int
+                                                               u1 := Int
+                                                               u2 := Int
+                                                               ua := Bool
+                                                               u3 := Int
+    return (apply-subst u3) = Int
+
+

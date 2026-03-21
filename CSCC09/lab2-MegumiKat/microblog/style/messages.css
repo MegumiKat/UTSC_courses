@@ -1,0 +1,101 @@
+#messages {
+    margin-top: 20px;
+}
+
+.message {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    justify-items: space-between;
+}
+
+.pc {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: auto;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.msg-contant {
+    flex-grow: 9;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.msg {
+    margin-bottom: 10px;
+    font-size: medium;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.thumb-up {
+    background-image: url('../uploads/up.png');
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 75%;
+   
+}
+
+.cross {
+    background-image: url('../uploads/cross.png');
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 75%;
+   
+}
+
+.thumb-down {
+    background: url('../uploads/down.png');
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 75%;
+   
+    
+}
+
+.thumb-up:hover,
+.cross:hover,
+.thumb-down:hover {
+    transform: scale(1.1);
+}
