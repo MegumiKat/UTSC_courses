@@ -7,7 +7,7 @@ Personal archive of course materials: lecture notes, assignments, labs, and stud
 Top-level folders are named by **course code**, for example:
 
 - **CSC\***: `CSCA08`, `CSCA67`, `CSCB07`, `CSCB09`, `CSCB36`, `CSCB48`, `CSCB58`, `CSCB63`, `CSCC01`, `CSCC09`, `CSCC10`, `CSCC24`, `CSCC37`, `CSCC43`, `CSCC63`, `CSCC69`, `CSCC73`, `CSCD03`
-- **Other subjects**: `EESA06&11`, `LINA01`, `MATA 31 & 37`, `MATA22`, `MATB41`, `MDSA01`, `MGEA02`, `PSYA02`, `STAA57`, `STAB52`
+- **Other subjects**: `CITA01`, `EESA06&11`, `LINA01`, `MATA 31 & 37`, `MATA22`, `MATB41`, `MDSA01`, `MGEA02`, `PSYA02`, `STAA57`, `STAB52`
 
 Inside each course folder you will typically find `lab`, `tut`, assignments, slides (e.g. `pptx` / `pdf`), or standalone projects—check the actual tree for that term.
 
